@@ -1,0 +1,129 @@
+$reset: 0;
+$full-size: 100%;
+$heading-color: #ffffff;
+$link-color: #f0712c;
+$html-font-size: 16px;
+$text-size: 1.1rem;
+$block-height: 20vw;
+
+* {
+  margin: $reset;
+  padding: $reset;
+  box-sizing: border-box;
+}
+
+  html {
+    font-size: $html-font-size * 1.5;
+    height: $full-size;
+  }
+
+  body {
+    height: $full-size;
+  }
+
+  .wrapper-page {
+    height: $full-size;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .header {
+    background-image: url(../img/header.png);
+    background-size: $full-size;
+    background-repeat: no-repeat;
+    min-height: $block-height * 1.5;
+    position: relative;
+  }
+
+  .headering {
+    color: $heading-color;
+    position: absolute;
+    bottom: 1.2rem;
+    font-size: $text-size;
+    width: $full-size;
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo {
+    background-image: url(../img/logo.png);
+    background-size: $full-size;
+    background-repeat: no-repeat;
+    min-height: $block-height;
+  }
+
+  .video {
+    width: $full-size;
+  }
+
+  .link-wrapper {
+    min-height: $block-height;
+    position: relative;
+  }
+
+  .link-next-page {
+    color: $link-color;
+    position: absolute;
+    bottom: 0.9rem;
+    font-size: $text-size;
+    width: $full-size;
+    text-align: center;
+  }
+
+  .footer {
+    background-image: url(../img/footer.png);
+    background-size: $full-size;
+    background-repeat: no-repeat;
+    min-height: $block-height * 1.5;
+  }
+
+  @media (min-width: 350px) {
+    .headering, .link-next-page {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .headering, .link-next-page {
+      font-size: 1.6rem;
+    }
+
+    .headering {
+      bottom: 1.5rem;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .headering, .link-next-page {
+      font-size: 2rem;
+    }
+
+    .headering {
+      bottom: 2rem;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .headering, .link-next-page {
+      font-size: 2.5rem;
+    }
+
+    .headering {
+      bottom: 2.5rem;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .headering {
+      font-size: 4rem;
+    }
+
+    .link-next-page {
+      font-size: 3rem;
+    }
+
+    .headering {
+      bottom: 3rem;
+    }
+  }
