@@ -4,90 +4,105 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 24px;
-  height: 100%; }
+  font-size: 24px; }
 
 body {
-  height: 100%; }
-
-.wrapper-page {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
+  background-image: url(../img/background.png); }
 
 .header {
-  background-image: url(../img/header.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 30vw;
+  min-height: 23vw;
   position: relative; }
 
 .headering {
   color: #ffffff;
   position: absolute;
-  bottom: 1.2rem;
+  top: 12vw;
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
   margin: 0; }
 
-.logo {
-  background-image: url(../img/logo.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 20vw; }
+.content {
+  min-height: 73vh;
+  border-radius: 345px/60px;
+  background-color: #ffffff;
+  overflow: hidden; }
 
-.video {
+.content .image-wrapper img {
   width: 100%; }
 
-.link-wrapper {
-  min-height: 20vw;
-  position: relative; }
+.logo {
+  background-image: url(../img/logo.png);
+  background-size: 85%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 26vw; }
 
-.link-next-page {
+.link-wrapper {
+  margin-bottom: 8vw; }
+
+.link-wrapper li {
+  min-height: 20vw;
+  position: relative;
+  border-top: 1px solid #a7a9ac; }
+
+.link-wrapper .sign-up {
   color: #f0712c;
   position: absolute;
-  bottom: 0.9rem;
+  bottom: 4vw;
   font-size: 1.1rem;
   width: 100%;
   text-align: center; }
 
+.link-wrapper .sign-in {
+  color: #f0712c;
+  position: absolute;
+  bottom: 7vw;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center; }
+
 .footer {
-  background-image: url(../img/footer.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 30vw; }
+  min-height: 23vw; }
 
 @media (min-width: 350px) {
-  .headering, .link-next-page {
-    font-size: 1.3rem; } }
-@media (min-width: 400px) {
-  .headering, .link-next-page {
-    font-size: 1.6rem; }
-
   .headering {
-    bottom: 1.5rem; } }
+    font-size: 1.4rem; }
+
+  .link-wrapper .sign-up {
+    font-size: 1.35rem; }
+
+  .link-wrapper .sign-in {
+    font-size: .93rem; } }
+@media (min-width: 400px) {
+  .headering {
+    font-size: 1.5rem; } }
 @media (min-width: 600px) {
-  .headering, .link-next-page {
+  .headering {
     font-size: 2rem; }
 
-  .headering {
-    bottom: 2rem; } }
-@media (min-width: 750px) {
-  .headering, .link-next-page {
-    font-size: 2.5rem; }
+  .link-wrapper .sign-up {
+    font-size: 2.4rem; }
 
+  .link-wrapper .sign-in {
+    font-size: 1.5rem; } }
+@media (min-width: 750px) {
   .headering {
-    bottom: 2.5rem; } }
+    font-size: 2.6rem; }
+
+  .link-wrapper .sign-up {
+    font-size: 2.6rem; }
+
+  .link-wrapper .sign-in {
+    font-size: 1.6rem; } }
 @media (min-width: 900px) {
   .headering {
-    font-size: 4rem; }
+    font-size: 3.2rem; }
 
-  .link-next-page {
+  .link-wrapper .sign-up {
     font-size: 3rem; }
 
-  .headering {
-    bottom: 3rem; } }
+  .link-wrapper .sign-in {
+    font-size: 1.8rem; } }
 
 /*# sourceMappingURL=main.css.map */
