@@ -10,13 +10,13 @@ body {
   background-image: url(../img/background.png); }
 
 .header {
-  min-height: 23vw;
+  min-height: 22vw;
   position: relative; }
 
 .headering {
   color: #ffffff;
   position: absolute;
-  top: 12vw;
+  top: 10vw;
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
@@ -24,7 +24,7 @@ body {
 
 .content {
   min-height: 73vh;
-  border-radius: 345px/60px;
+  border-radius: 345px/50px;
   background-color: #ffffff;
   overflow: hidden; }
 
@@ -63,14 +63,14 @@ body {
   text-align: center; }
 
 .footer {
-  min-height: 23vw; }
+  min-height: 24vw; }
 
 @media (min-width: 350px) {
   .headering {
     font-size: 1.4rem; }
 
   .link-wrapper .sign-up {
-    font-size: 1.35rem; }
+    font-size: 1.4rem; }
 
   .link-wrapper .sign-in {
     font-size: .93rem; } }

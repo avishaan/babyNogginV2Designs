@@ -10,35 +10,35 @@ $background-content: #ffffff;
   box-sizing: border-box;
 }
 
-  html {
-    font-size: $html-font-size * 1.5;
-  }
+html {
+  font-size: $html-font-size * 1.5;
+}
 
-  body {
-    background-image: url(../img/background.png);
-  }
+body {
+  background-image: url(../img/background.png);
+}
 
-  .header {
-    min-height: 23vw;
-    position: relative;
-  }
+.header {
+  min-height: 22vw;
+  position: relative;
+}
 
-  .headering {
-    color: $heading-color;
-    position: absolute;
-    top: 12vw;
-    font-size: 1.1rem;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-  }
+.headering {
+  color: $heading-color;
+  position: absolute;
+  top: 10vw;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
 
-  .content {
-    min-height: 73vh;
-    border-radius: 345px/60px;
-    background-color: $background-content;
-    overflow: hidden;
-  }
+.content {
+  min-height: 73vh;
+  border-radius: 345px/50px;
+  background-color: $background-content;
+  overflow: hidden;
+}
   .content .image-wrapper {
 
   }
@@ -46,7 +46,6 @@ $background-content: #ffffff;
   .content .image-wrapper img {
   	width: 100%;
   }
-
 
   .logo {
     background-image: url(../img/logo.png);
@@ -73,7 +72,6 @@ $background-content: #ffffff;
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
-  //font-weight: bold;
 }
 
 .link-wrapper .sign-in {
@@ -86,7 +84,7 @@ $background-content: #ffffff;
 }
 
   .footer {
-    min-height: 23vw;
+    min-height: 24vw;
   }
 
   @media (min-width: 350px) {
@@ -95,7 +93,7 @@ $background-content: #ffffff;
     }
 
     .link-wrapper .sign-up {
-      font-size: 1.35rem;
+      font-size: 1.4rem;
     }
 
     .link-wrapper .sign-in {
