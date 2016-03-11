@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 24px; }
+  font-size: 18px; }
 
 body {
   background-image: url(../img/background.png); }
@@ -17,13 +17,12 @@ body {
   color: #ffffff;
   position: absolute;
   top: 10vw;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   width: 100%;
   text-align: center;
   margin: 0; }
 
 .content {
-  min-height: 73vh;
   border-radius: 345px/50px;
   background-color: #ffffff;
   overflow: hidden; }
@@ -50,7 +49,7 @@ body {
   color: #f0712c;
   position: absolute;
   bottom: 4vw;
-  font-size: 1.1rem;
+  font-size: 1.45rem;
   width: 100%;
   text-align: center; }
 
@@ -58,7 +57,7 @@ body {
   color: #f0712c;
   position: absolute;
   bottom: 7vw;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   width: 100%;
   text-align: center; }
 
@@ -66,43 +65,25 @@ body {
   min-height: 24vw; }
 
 @media (min-width: 350px) {
-  .headering {
-    font-size: 1.4rem; }
-
-  .link-wrapper .sign-up {
-    font-size: 1.4rem; }
-
-  .link-wrapper .sign-in {
-    font-size: .93rem; } }
+  html {
+    font-size: 21px; } }
 @media (min-width: 400px) {
-  .headering {
-    font-size: 1.5rem; } }
+  html {
+    font-size: 24px; } }
 @media (min-width: 600px) {
-  .headering {
-    font-size: 2rem; }
+  html {
+    font-size: 28px; }
 
   .link-wrapper .sign-up {
-    font-size: 2.4rem; }
-
-  .link-wrapper .sign-in {
-    font-size: 1.5rem; } }
-@media (min-width: 750px) {
-  .headering {
-    font-size: 2.6rem; }
-
-  .link-wrapper .sign-up {
-    font-size: 2.6rem; }
-
-  .link-wrapper .sign-in {
-    font-size: 1.6rem; } }
+    font-size: 1.9rem; } }
+@media (min-width: 730px) {
+  html {
+    font-size: 38px; } }
 @media (min-width: 900px) {
-  .headering {
-    font-size: 3.2rem; }
+  html {
+    font-size: 56px; }
 
   .link-wrapper .sign-up {
-    font-size: 3rem; }
-
-  .link-wrapper .sign-in {
-    font-size: 1.8rem; } }
+    font-size: 1.9rem; } }
 
 /*# sourceMappingURL=main.css.map */
