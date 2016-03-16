@@ -1,0 +1,526 @@
+$reset: 0;
+$html-font-size: 18px;
+$header-height: 22vw;
+$headering-top-position: 10vw;
+$headering-font-size: 1.4rem;
+$headering-width: 100%;
+$heading-color: #ffffff;
+$arrow-pos-top: 11vw;
+$arrow-pos-left: 7vw;
+$arrow-img-width: 6vw;
+$content-min-height: 83vh;
+$link-color: #f0712c;
+$radio-buttons-color: #39b9de;
+$background-content: #ffffff;
+$border-color: #a7a9ac;
+$footer-min-height: 14vw;
+$form-heading-color: #39b9de;
+$form-heading-font-size: 1rem;
+
+// general styles
+
+* {
+  margin: $reset;
+  padding: $reset;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $html-font-size;
+}
+
+body {
+  background-image: url(../img/background.png);
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  min-height: $header-height;
+  position: relative;
+}
+
+.header .headering {
+  color: $heading-color;
+  position: absolute;
+  top: $headering-top-position;
+  font-size: $headering-font-size;
+  width: $headering-width;
+  text-align: center;
+  margin: $reset;
+}
+
+.header .arrow-back {
+  position: absolute;
+  top: $arrow-pos-top;
+  left: $arrow-pos-left;
+}
+
+.header .arrow-back img {
+  width: $arrow-img-width;
+}
+
+.content {
+  border-radius: 345px/50px;
+  background-color: $background-content;
+  overflow: hidden;
+}
+
+.footer {
+  min-height: $footer-min-height;
+}
+
+// landing page styles
+
+.wrapper-landing-page .logo {
+  background-image: url(../img/logo.png);
+  background-size: 85%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 26vw;
+}
+
+.wrapper-landing-page .link-wrapper {
+  margin-bottom: 8vw;
+}
+
+.wrapper-landing-page .link-wrapper li {
+  min-height: 20vw;
+  position: relative;
+  border-top: 1px solid #a7a9ac;
+}
+
+.wrapper-landing-page .link-wrapper .sign-up {
+  color: $link-color;
+  position: absolute;
+  bottom: 4vw;
+  font-size: 1.45rem;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper-landing-page .link-wrapper .sign-in {
+  color: $link-color;
+  position: absolute;
+  bottom: 7vw;
+  font-size: 1.05rem;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper-landing-page .footer {
+  min-height: 24vw;
+}
+
+// setup-page styles
+
+// form styles
+
+.wrapper-setup-page input:not([type]),
+.wrapper-setup-page input[type=text],
+.wrapper-setup-page input[type=password],
+.wrapper-setup-page input[type=email] {
+  margin-bottom: 5px;
+}
+
+.wrapper-setup-page input[type=text]:focus,
+.wrapper-setup-page input[type=password]:focus,
+.wrapper-setup-page input[type=email]:focus {
+     border-bottom: 1px solid #fb8c00;
+     box-shadow: 0 1px 0 0 #fb8c00;
+   }
+
+.wrapper-setup-page .input-field {
+  margin-top: 0;
+}
+
+.wrapper-setup-page .input-field input {
+  padding-left: 2.5rem;
+}
+
+.wrapper-setup-page .input-field .name-input {
+  margin-top: 0.8rem;
+}
+
+// radio styles
+
+.wrapper-setup-page .radio-wrapper {
+  height: 3.3rem;
+  padding-left: 1.6rem;
+}
+
+.wrapper-setup-page [type="radio"] + label:before,
+.wrapper-setup-page [type="radio"] + label:after {
+    width: 2.5rem;
+    height: 1.3rem;
+    margin-top: 0;
+}
+
+.wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
+.wrapper-setup-page .input-field [type="radio"]:checked + label {
+    padding: 0 0.66rem 0 0.65rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-right: 0.8rem;
+}
+
+.wrapper-setup-page .wrapper-form [type="radio"]:not(:checked) + label:before {
+    border-radius: 0%;
+    border: 1px solid $border-color;
+}
+
+.wrapper-setup-page [type="radio"]:checked + label:after {
+    border-radius: 0%;
+    border: 1px solid $radio-buttons-color;
+    background-color: $radio-buttons-color;
+    z-index: -1;
+    transform: scale(1.02);
+}
+
+.wrapper-setup-page [type="radio"]:checked + label {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.wrapper-setup-page .add-border {
+  border-bottom: 1px solid $border-color;
+  margin-top: $reset;
+}
+
+.wrapper-setup-page input[type=email] {
+  height: 2.8rem;
+}
+
+// password styles
+
+.wrapper-setup-page .input-field .input-password {
+  border: none;
+  margin-bottom: -0.5rem
+}
+
+.wrapper-setup-page input[type=password] {
+  height: 2.1rem;
+}
+
+// input-file styles
+
+.wrapper-setup-page .input-file-wrapper {
+  height: 3rem;
+  border-bottom: 1px solid $border-color;
+  color: $link-color;
+  margin-top: -0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.wrapper-setup-page .input-file-wrapper > label {
+  color: $link-color;
+  padding-left: 1.8rem;
+}
+
+// checkbox styles
+
+.wrapper-setup-page [type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid $radio-buttons-color;
+    background-color: $radio-buttons-color;
+}
+
+.wrapper-setup-page .wrapper-checkbox {
+  padding-left: 2.4rem;
+}
+
+.wrapper-setup-page .wrapper-checkbox label {
+  font-size: 0.9rem
+}
+
+//
+
+.wrapper-setup-page .link-wrapper {
+  padding-left: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.wrapper-setup-page .link-wrapper a {
+  color: $link-color;
+  font-size: 0.8rem;
+}
+
+.wrapper-setup-page .button-wrapper {
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-setup-page .button-wrapper .button {
+  border: none;
+  background-color: #ffffff;
+  color: $link-color;
+}
+
+// setup-birthdate styles
+
+.wrapper-setup-birthdate .content {
+    min-height: $content-min-height;
+    padding: 20vw 10vw 5vw;
+}
+
+.wrapper-form-heading {
+  margin-bottom: 10vw;
+  position: relative;
+}
+
+.wrapper-form-heading h3 {
+  display: inline-block;
+  font-size: $form-heading-font-size;
+  color: $form-heading-color;
+  margin: $reset;
+}
+
+.wrapper-form-heading .button {
+  position: absolute;
+  right: $reset;
+  font-size: $form-heading-font-size;
+  border: none;
+  background-color: $background-content;
+  color: $link-color;
+  height: 100%;
+}
+
+// begin calendar styles
+
+.calendar-wrapper {
+  min-height: 60vw;
+  margin-bottom: 5vw;
+}
+
+div.inside, div.outside {
+  float: left;
+}
+
+/* select month styles */
+
+#drum_month {
+  width: 7.5rem;
+  height: 11rem;
+}
+#drum_month .inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+#drum_month .container, #drum_month figure {
+  height: 2.1rem;
+}
+#drum_month .container {
+  top: 3.4rem;
+}
+#drum_month figure {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+/* select day styles */
+
+#drum_day {
+width: 2.2rem;
+height: 11rem;
+}
+#drum_day .inner {
+top: 1rem;
+height: 8.7rem;
+}
+#drum_day .container, #drum_day figure {
+height: 2.1rem;
+}
+#drum_day .container {
+top: 3.4rem;
+}
+#drum_day figure {
+text-align: center;
+font-size: 1.2rem;
+line-height: 1.4rem;
+}
+
+/* select year styles */
+
+#drum_year {
+width: 4rem;
+height: 11rem;
+}
+#drum_year .inner {
+top: 1rem;
+height: 8.7rem;
+}
+#drum_year .container, #drum_year figure {
+height: 2.1rem;
+}
+#drum_year .container {
+top: 3.4rem;
+}
+#drum_year figure {
+text-align: right;
+font-size: 1.2rem;
+line-height: 1.4rem;
+}
+
+//  end calendar styles
+
+// notification classes
+
+.wrapper-setup-birthdate .exclamation-mark {
+  width: 100%;
+  height: 3rem;
+  background-image: url(../img/exclamation-mark.png);
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position: center;
+}
+
+.wrapper-setup-birthdate .message {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 4vw;
+}
+
+.wrapper-setup-birthdate .message a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+// setup-birthdate styles
+
+.wrapper-due-date .content {
+    min-height: $content-min-height;
+    padding: 20vw 10vw 5vw;
+}
+
+
+// media query styles
+
+@media (min-width: 350px) {
+
+  html {
+    font-size: 21px;
+  }
+
+  // setup-page styles
+
+  .wrapper-setup-page [type="radio"] + label:before,
+  .wrapper-setup-page [type="radio"] + label:after {
+      width: 2.4rem;
+      height: 1.2rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width:599px) {
+
+  html {
+    font-size: 24px;
+  }
+
+  // calendar styles
+
+  #drum_month .inner,
+  #drum_day .inner,
+  #drum_year .inner {
+    top: 1rem;
+    height: 8.5rem;
+  }
+
+  // setup-page styles
+
+  .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
+  .wrapper-setup-page .input-field [type="radio"]:checked + label {
+      padding: 0.11rem 0.66rem 0 0.65rem;
+  }
+
+  .wrapper-setup-page [type="radio"] + label:before,
+  .wrapper-setup-page [type="radio"] + label:after {
+      width: 2.5rem;
+      height: 1.3rem;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width:729px) {
+
+  html {
+    font-size: 28px;
+  }
+
+  // setup-page styles
+
+  .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
+  .wrapper-setup-page .input-field [type="radio"]:checked + label {
+      padding: 0.1rem 0.66rem 0 0.65rem;
+  }
+
+  .wrapper-setup-page [type="radio"] + label:before,
+  .wrapper-setup-page [type="radio"] + label:after {
+      height: 1.1rem;
+  }
+
+}
+
+@media (min-width: 730px) {
+
+  html {
+    font-size: 38px;
+  }
+
+  // calendar styles
+
+  #drum_month {
+    width: 9rem;
+  }
+
+  // setup-page styles
+
+  .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
+  .wrapper-setup-page .input-field [type="radio"]:checked + label {
+      padding: 0.25rem 0.66rem 0 0.45rem;
+  }
+
+  .wrapper-setup-page [type="checkbox"].filled-in:checked + label:after,
+  .wrapper-setup-page [type="checkbox"].filled-in:not(:checked) + label:after {
+     width: 0.7rem;
+     height: 0.7rem;
+  }
+
+  .wrapper-setup-page [type="checkbox"].filled-in:checked + label:before {
+    width: 0.3rem;
+    height: 0.5rem;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+  .header .headering {
+    font-size: 1.6rem;
+  }
+
+  // calendar styles
+
+  .calendar-wrapper {
+    min-height: 55vw;
+    margin-bottom: 0;
+  }
+
+  #drum_year {
+    width: 5rem;
+  }
+
+  #drum_day {
+    width: 7rem;
+  }
+
+// landing page styles
+
+  .wrapper-landing-page .link-wrapper .sign-up {
+    font-size: 1.9rem;
+  }
+
+}
