@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baby Noggin</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="ios/js/hammerjs/hammer.min.js"></script>
+    <script src="ios/js/hammerjs/hammer.fakemultitouch.js"></script>
+    <link rel="stylesheet" href="ios/lib/drum.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script src="ios/lib/drum.js"></script>
+    <script>
+        Hammer.plugins.fakeMultitouch();
+        $(document).ready(function () {
+          $("#sleep").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
+        });
+    </script>
+</head>
+<body>
+    <div class="tracker wrapper-sleep">
+        <!-- header-->
+        <header class="header">
+          <h1 class="headering">baby tracker</h1>
+          <a href="#" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
+          <a href="#" class="menu"><img src="img/icon-menu.png" alt="arrow" /></a>
+        </header>
+        <!-- content -->
+        <div class="content">
+            <div class="list-menu">
+              <ul class="clear-fix">
+                <li><a href="#">Feed</a></li>
+                <li class="active-link"><a href="#">Sleep</a></li>
+                <li><a href="#">Vaccines</a></li>
+                <li><a href="#">Diary</a></li>
+              </ul>
+            </div>
+            <!-- form -->
+            <form action="#" name="date">
+                <div class="wrapper-menu-form">
+                  <a href="#">Cancel</a>
+                  <span>Sleep/Wake</span>
+                  <input type="submit" name="button" class="button" value="Next">
+                </div>
+                <!--  -->
+                <div class="wrapper-select">
+                    <div class="lines"></div>
+                    <!-- select sleep/wake -->
+                    <div class="">
+                        <select id="sleep" class="drum" name="sleep">
+                            <option value="0">Awake</option>
+                            <option value="1">Asleep</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

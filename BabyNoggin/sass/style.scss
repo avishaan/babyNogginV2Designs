@@ -1,29 +1,8 @@
-$reset: 0;
-$html-font-size: 18px;
-$header-height: 22vw;
-$headering-top-position: 10vw;
-$headering-font-size: 1.4rem;
-$headering-width: 100%;
-$heading-color: #ffffff;
-$arrow-pos-top: 11vw;
-$arrow-pos-left: 7vw;
-$arrow-img-width: 6vw;
-$content-min-height: 83vh;
-$link-color: #f0712c;
-$radio-buttons-color: #39b9de;
-$background-content: #ffffff;
-$border-color: #a7a9ac;
-$footer-min-height: 14vw;
-$form-heading-color: #39b9de;
-$form-heading-font-size: 1rem;
+@import "variables.scss";
+@import "reset";
+@import "helpers";
 
 // general styles
-
-* {
-  margin: $reset;
-  padding: $reset;
-  box-sizing: border-box;
-}
 
 html {
   font-size: $html-font-size;
@@ -49,7 +28,6 @@ img {
   font-size: $headering-font-size;
   width: $headering-width;
   text-align: center;
-  margin: $reset;
 }
 
 .header .arrow-back {
@@ -58,14 +36,21 @@ img {
   left: $arrow-pos-left;
 }
 
-.header .arrow-back img {
-  width: $arrow-img-width;
+.header img {
+  width: $header-icon-width;
+}
+
+.header .menu {
+  position: absolute;
+  top: $menu-pos-top;
+  right: $menu-pos-right;
 }
 
 .content {
   border-radius: 345px/50px;
   background-color: $background-content;
   overflow: hidden;
+  min-height: $content-min-height;
 }
 
 .footer {
@@ -73,6 +58,10 @@ img {
 }
 
 // landing page styles
+
+.wrapper-landing-page .content {
+  min-height: 75vw;
+}
 
 .wrapper-landing-page .logo {
   background-image: url(../img/logo.png);
@@ -89,7 +78,7 @@ img {
 .wrapper-landing-page .link-wrapper li {
   min-height: 20vw;
   position: relative;
-  border-top: 1px solid #a7a9ac;
+  border-top: 1px solid $border-color;
 }
 
 .wrapper-landing-page .link-wrapper .sign-up {
@@ -128,8 +117,8 @@ img {
 .wrapper-setup-page input[type=text]:focus,
 .wrapper-setup-page input[type=password]:focus,
 .wrapper-setup-page input[type=email]:focus {
-     border-bottom: 1px solid #fb8c00;
-     box-shadow: 0 1px 0 0 #fb8c00;
+     border-bottom: 1px solid $form-active-border;
+     box-shadow: 0 1px 0 0 $form-active-border;
    }
 
 .wrapper-setup-page .input-field {
@@ -255,32 +244,32 @@ img {
 
 .wrapper-setup-page .button-wrapper .button {
   border: none;
-  background-color: #ffffff;
+  background-color: $background-content;
   color: $link-color;
 }
 
-// setup-birthdate styles
+// setup-birthdate page styles and setup-due-date page styles
 
-.wrapper-setup-birthdate .content {
-    min-height: $content-min-height;
-    padding: 20vw 10vw 5vw;
+.wrapper-setup-birthdate .content,
+.wrapper-due-date .content {
+    padding: 20vw 0 5vw;
 }
 
 .wrapper-form-heading {
   margin-bottom: 10vw;
   position: relative;
+  padding: 0 10vw;
 }
 
 .wrapper-form-heading h3 {
   display: inline-block;
   font-size: $form-heading-font-size;
   color: $form-heading-color;
-  margin: $reset;
 }
 
 .wrapper-form-heading .button {
   position: absolute;
-  right: $reset;
+  right: 10vw;
   font-size: $form-heading-font-size;
   border: none;
   background-color: $background-content;
@@ -291,8 +280,20 @@ img {
 // begin calendar styles
 
 .calendar-wrapper {
+  position: relative;
   min-height: 60vw;
   margin-bottom: 5vw;
+  padding: 0 10vw;
+}
+
+.calendar-wrapper .lines {
+  border-top: solid 1px $lines-select;
+  border-bottom: solid 1px $lines-select;
+  position: absolute;
+  top: 23vw;
+  left: 0;
+  width: 100%;
+  height: 2rem;
 }
 
 div.inside, div.outside {
@@ -381,7 +382,7 @@ line-height: 1.4rem;
 .wrapper-setup-birthdate .message {
   font-size: 0.9rem;
   text-align: center;
-  padding: 4vw;
+  padding: 4vw 10vw;
 }
 
 .wrapper-setup-birthdate .message a {
@@ -389,17 +390,667 @@ line-height: 1.4rem;
   text-decoration: none;
 }
 
-// setup-birthdate styles
+// profile page styles
 
-.wrapper-due-date .content {
-    min-height: $content-min-height;
-    padding: 20vw 10vw 5vw;
+.wrapper-profile-page .birthdate-wrapper {
+  position: relative;
+  min-height: 20vw;
+  border-bottom: 1px solid $border-color;
+}
+
+.wrapper-profile-page .wrapper-tick-icon {
+  position: absolute;
+  top: -9vw;
+  left: 14vw;
+  background-image: url(../img/tick.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 20vw;
+  height: 25vw;
+}
+
+.wrapper-profile-page .birthdate {
+    position: absolute;
+    top: 2vw;
+    right: 14vw;
+    width: 40vw;
+    color: $text-color;
+    line-height: 1.2rem;
+}
+
+.wrapper-profile-page .birthdate span {
+    font-weight: bold;
+}
+
+.wrapper-profile-page .progress-link {
+    position: relative;
+    min-height: 16.5vw;
+    border-bottom: 1px solid $border-color;
+}
+
+.wrapper-profile-page .progress-link a {
+    color: $link-color;
+    position: absolute;
+    bottom: 4vw;
+    font-size: 1.05rem;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper-profile-page .milestone-wrapper {
+    position: relative;
+    min-height: 25vw;
+}
+
+.wrapper-profile-page .milestone-wrapper h5 {
+    text-align: center;
+    font-size: 1rem;
+    color: $text-color;
+    margin: 4vw 0 1vw;
+}
+
+.wrapper-profile-page .milestone-wrapper a {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: $link-color;
+    font-size: 1.05rem;
+  }
+
+// profile-progress styles
+
+.wrapper-progress-page .birthdate-wrapper {
+    position: relative;
+    min-height: 20vw;
+    border-bottom: 1px solid $border-color;
+  }
+
+.wrapper-progress-page .wrapper-daisy-icon {
+    position: absolute;
+    top: -20vw;
+    left: 5vw;
+    width: 34vw;
+    height: 34vw;
+    background-image: url(../img/daisy-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+.wrapper-progress-page .birthdate {
+    position: absolute;
+    top: 2vw;
+    right: 9vw;
+    width: 50vw;
+    color: $text-color;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.wrapper-progress-page .birthdate span {
+  font-weight: bold;
+}
+
+.wrapper-progress-page .period-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw 5vw 0;
+  font-size: 0.9rem;
+}
+
+.wrapper-progress-page .period-time span {
+  color: #3ccfd4;
+}
+
+.wrapper-progress-page .period-time a {
+  color: $text-color;
+}
+
+.wrapper-progress-page .period-time .active-link {
+    color: $link-color;
+  }
+
+  .wrapper-progress-page .milestone-heading,
+  .wrapper-progress-page .vaccines-heading {
+    position: relative;
+    min-height: 13vw;
+    font-size: 0.9rem;
+  }
+
+  .wrapper-progress-page .milestone-heading h3,
+  .wrapper-progress-page .vaccines-heading h3 {
+    //font-size: 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 4.5vw;
+    left: 5vw;
+    font-size: 0.9rem;
+  }
+
+.wrapper-progress-page .milestone-heading a,
+.wrapper-progress-page .vaccines-heading a {
+  position: absolute;
+  top: 3.3vw;
+  right: 5vw;
+  color: $link-color;
+}
+
+.wrapper-progress-page .milestone-list {
+  //position: relative;
+}
+
+.wrapper-progress-page .milestone-list li,
+.wrapper-progress-page .vaccines-list li {
+  position: relative;
+  min-height: 13vw;
+  padding: 0 5vw;
+}
+
+.wrapper-progress-page .milestone-list li:nth-child(odd),
+.wrapper-progress-page .vaccines-list li:nth-child(odd) {
+  background-color: #d6ecec;
+}
+
+.wrapper-progress-page li {
+  background-repeat: no-repeat;
+  background-position-x: 5vw;
+  background-position-y: center;
+  background-size: 5.5%;
+}
+
+.wrapper-progress-page .crossing-eyes {
+  background-image: url(../img/crossing-eyes-icon.png);
+}
+
+.wrapper-progress-page .covered-toy {
+  background-image: url(../img/eyes-icon.png);
+}
+
+.wrapper-progress-page .back-front {
+  background-image: url(../img/message-icon.png);
+}
+
+.wrapper-progress-page .milestone-list a {
+  position: absolute;
+  top: 3vw;
+  left: 12vw;
+  color: $link-color;
+  font-size: 0.9rem;
+}
+
+.wrapper-progress-page .vaccines-list a {
+  position: absolute;
+  top: 3vw;
+  left: 5vw;
+  color: $link-color;
+  font-size: 0.9rem;
+}
+
+.wrapper-progress-page .milestone-list span,
+.wrapper-progress-page .vaccines-list span {
+  position: absolute;
+  right: 5vw;
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+.wrapper-progress-page .favorites-heading {
+  position: relative;
+  min-height: 13vw;
+  font-size: 0.9rem;
+}
+
+//
+.wrapper-progress-page .favorites {
+  border-top: 1px solid $border-color;
+  margin-bottom: 15vw;
+}
+
+.wrapper-progress-page .favorites-heading h3 {
+  display: inline-block;
+  position: absolute;
+  top: 4.5vw;
+  left: 5vw;
+  font-size: 0.9rem;
+  color: #3ccfd4;
+}
+
+.wrapper-progress-page .favorites-heading a {
+  position: absolute;
+  top: 3vw;
+  right: 5vw;
+  color: $link-color;
+}
+
+.wrapper-progress-page .favorites-list a {
+  padding: 0 5vw;
+  color: $link-color;
+  font-size: 0.9rem;
+}
+
+// our status styles
+
+.wrapper-our-status .icon-status {
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+
+.status-great .icon-status {
+  background-image: url(../img/great-daisy.png);
+}
+
+.status-seek .icon-status {
+  background-image: url(../img/seek-daisy.png);
+}
+
+.status-test .icon-status {
+  background-image: url(../img/tests-daisy.png);
+}
+
+.status-great .description {
+  padding: 5vw 6vw;
+}
+
+.status-test .description, .status-seek .description {
+  padding: 5vw 8vw;
+}
+
+.wrapper-our-status .description h2 {
+  font-size: 1rem;
+  text-align: center;
+  color: $status-header-color;
+  margin-bottom: 4vw;
+}
+
+.wrapper-our-status .description p {
+  text-align: center;
+  color: $text-color;
+
+}
+
+.status-great .description p ,
+.status-test .description p {
+  margin-bottom: 12vw;
+}
+
+.status-seek .description p {
+  margin-bottom: 4vw;
+}
+
+.wrapper-our-status .description span {
+  font-weight: bold;
+}
+
+.wrapper-our-status .description a {
+  color: $link-color;
+}
+
+.status-great .wrapper-link,
+.status-test .wrapper-link {
+  position: relative;
+  min-height: 10vw;
+  margin-bottom: 10vw;
+}
+
+.status-great .wrapper-link a,
+.status-test .wrapper-link a {
+  position: absolute;
+  color: $link-color;
+  text-align: center;
+  width: 100%;
+}
+
+// baby tracker 1 styles
+
+.wrapper-tracker-1 .description {
+  color: $text-color;
+  padding: 0 5vw;
+  margin-bottom: 3vw;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.wrapper-tracker-1 .list-tracking {
+  margin-bottom: 8vw;
+}
+
+.wrapper-tracker-1 .list-tracking li {
+  position: relative;
+  min-height: 15vw;
+  padding: 0 5vw;
+  background-repeat: no-repeat;
+  background-position-x: 15vw;
+  background-position-y: center;
+  background-size: 6.5%;
+  border-bottom: 1px solid $border-color;
+}
+
+.wrapper-tracker-1 .list-tracking li:last-child {
+  border-bottom: none;
+}
+
+.wrapper-tracker-1 .list-tracking .keep-track {
+  background-image: url(../img/crossing-eyes-icon.png);
+}
+
+.wrapper-tracker-1 .list-tracking .record-sleep {
+  background-image: url(../img/eyes-icon.png);
+}
+
+.wrapper-tracker-1 .list-tracking .vacciness {
+  background-image: url(../img/message-icon.png);
+}
+
+.wrapper-tracker-1 .list-tracking .diary {
+  background-image: url(../img/message-icon.png);
+}
+
+.wrapper-tracker-1 .list-tracking a {
+  position: absolute;
+  top: 3.2vw;
+  left: 25vw;
+  color: $link-color;
+  font-size: 1rem;
+}
+
+// baby tracker 2 styles
+
+.tracker .content {
+  padding: 5vw 0;
+}
+
+.tracker .list-menu {
+  padding: 0 5vw;
+}
+
+.tracker .list-menu ul{
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tracker .list-menu li {
+  float: left;
+  padding: 0.5vw 4.2vw;
+  border-right: 1px solid $border-color;
+}
+
+.tracker .list-menu li:last-child {
+  border: none;
+}
+
+.tracker .list-menu .active-link {
+  background-color: $radio-buttons-color;
+}
+
+.tracker .list-menu a {
+  font-size: 0.85rem;
+  color: $link-color;
+}
+
+.tracker .list-menu .active-link a {
+  color: $heading-color;
+}
+
+.wrapper-tracker-2 .change-date {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.wrapper-tracker-2 .prev,
+.wrapper-tracker-2 .next {
+  width: 12vw;
+}
+
+.wrapper-tracker-2 .prev a {
+  color: $link-color;
+  font-size: 0.9rem;
+}
+
+.wrapper-tracker-2 .prev a:before {
+  content: "";
+  background-image: url(../img/prev-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  height: 8vw;
+  float: left;
+  position: relative;
+  top: 8px;
+  display: inline-block;
+  width: 4vw;
+}
+
+.wrapper-tracker-2 .next a {
+  color: $text-color;
+  font-size: 0.9rem;
+}
+
+.wrapper-tracker-2 .next a:after {
+  content: "";
+  background-image: url(../img/next-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  height: 8vw;
+  float: right;
+  position: relative;
+  top: 8px;
+  display: inline-block;
+  width: 4vw;
+}
+
+.wrapper-tracker-2 .current-date h3 {
+  font-size: 1rem;
+  position: relative;
+  top: 1vw;
+}
+
+.wrapper-tracker-2 .add-notes {
+  width: 8vw;
+  height: 8vw;
+  background-image: url(../img/plus.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+// list styles
+
+.wrapper-tracker-2 .list-notes {
+  padding: 0 5vw;
+}
+
+.wrapper-tracker-2 .list-notes li {
+  //min-height: 11vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $text-color;
+}
+
+.wrapper-tracker-2 .list-notes li:nth-child(odd) {
+  background-color: #D2D8D8;
+}
+
+.wrapper-tracker-2 .list-notes li:first-child {
+  background-color: #d6ecec;
+}
+
+.wrapper-tracker-2 .list-notes span:last-child {
+  font-size: 0.8rem;
+
+}
+
+// baby trackers styles
+
+.tracker .wrapper-menu-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8vw;
+  padding: 0 5vw;
+}
+
+.tracker .wrapper-menu-form a {
+  color: $link-color;
+}
+
+.tracker .button {
+  border: none;
+  background-color: $background-content;
+  color: $link-color;
+  padding: 0;
+}
+
+.tracker h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #159fc0;
+  margin-bottom: 4vw;
+}
+
+.tracker .wrapper-select {
+  min-height: 60vw;
+  margin-bottom: 5vw;
+  position: relative;
+}
+
+.tracker .lines {
+  border-top: solid 1px $lines-select;
+  border-bottom: solid 1px $lines-select;
+  position: absolute;
+  top: 23vw;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+}
+
+.tracker .choose-time {
+  position: relative;
+  min-height: 60vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+// baby tracker 3 styles
+
+#drum_method {
+  width: 100%;
+  height: 11rem;
+}
+#drum_method .inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+#drum_method .container, #drum_method figure {
+  height: 2.1rem;
+}
+#drum_method .container {
+  top: 3.4rem;
+}
+#drum_method figure {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+// bt-feed-time bt-sleep-time
+// select hour styles
+
+#drum_hour {
+  width: 2rem;
+  height: 11rem;
+}
+#drum_hour .inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+#drum_hour .container, #drum_hour figure {
+  height: 2.1rem;
+}
+#drum_hour .container {
+  top: 3.4rem;
+}
+#drum_hour figure {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+// select min styles
+
+#drum_min {
+  width: 2rem;
+  height: 11rem;
+}
+#drum_min .inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+#drum_min .container, #drum_min figure {
+  height: 2.1rem;
+}
+#drum_min .container {
+  top: 3.4rem;
+}
+#drum_min figure {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+// select time-of-day styles
+
+#drum_time-of-day {
+  width: 3rem;
+  height: 11rem;
+}
+#drum_time-of-day .inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+#drum_time-of-day .container, #drum_time-of-day figure {
+  height: 2.1rem;
+}
+#drum_time-of-day .container {
+  top: 3.4rem;
+}
+#drum_time-of-day figure {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+// select sleep/wake styles
+
+#drum_sleep {
+  width: 100%;
+  height: 11rem;
+}
+#drum_sleep .inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+#drum_sleep .container, #drum_sleep figure {
+  height: 2.1rem;
+}
+#drum_sleep .container {
+  top: 3.4rem;
+}
+#drum_sleep figure {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 
 // media query styles
 
-@media (min-width: 350px) {
+@media (min-width: $small) {
 
   html {
     font-size: 21px;
@@ -412,9 +1063,16 @@ line-height: 1.4rem;
       width: 2.4rem;
       height: 1.2rem;
   }
+
+  // baby tracker 1 styles
+
+  .wrapper-tracker-1 .list-tracking li {
+    background-size: 6.5%;
+  }
+
 }
 
-@media (min-width: 400px) and (max-width:599px) {
+@media (min-width: $xsmall) and (max-width:$medium - 1) {
 
   html {
     font-size: 24px;
@@ -442,19 +1100,108 @@ line-height: 1.4rem;
       height: 1.3rem;
   }
 
+  // select lines
+  .calendar-wrapper .lines,
+  .tracker .lines {
+    top: 23.5vw;
+  }
+
+  // progress-page styles
+
+  .wrapper-progress-page .milestone-list a,
+  .wrapper-progress-page .vaccines-list a {
+    top: 2.6vw;
+  }
+
 }
 
-@media (min-width: 600px) and (max-width:729px) {
+@media (min-width: $xsmall) and (max-width:$xsmall-landscape - 1) and (orientation: landscape){
+
+  .wrapper-profile-page .tick {
+    font-size: 3rem;
+    padding-left: 2.2vw;
+    line-height: 3.5rem;
+  }
+
+  // track styles
+  .tracker .list-menu li {
+    padding: 0.5vw 5.2vw;
+}
+
+// select lines
+.calendar-wrapper .lines,
+.tracker .lines {
+  top: 20.5vw;
+}
+
+}
+
+@media (min-width: $xsmall-landscape) and (orientation: landscape) {
 
   html {
     font-size: 28px;
+  }
+
+  // login styles
+
+  .wrapper-setup-page [type="radio"] + label:before,
+  .wrapper-setup-page [type="radio"] + label:after {
+    height: 1.1rem;
+}
+
+  .wrapper-profile-page .tick {
+    font-size: 3rem;
+    padding-left: 2.2vw;
+    line-height: 3.5rem;
+}
+
+// select lines
+.calendar-wrapper .lines,
+.tracker .lines {
+  top: 20vw;
+}
+
+// progress-page styles
+
+.wrapper-progress-page li {
+  background-size: 4.5%;
+}
+
+.wrapper-progress-page .milestone-list a,
+.wrapper-progress-page .vaccines-list a {
+  top: 3.7vw;
+}
+
+.wrapper-progress-page .milestone-list span,
+.wrapper-progress-page .vaccines-list span {
+  top: 0.7vw;
+}
+
+// baby-tracker-1 styles
+
+.wrapper-tracker-1 .list-tracking a {
+  top: 3.6vw;
+  font-size: 1.1rem;
+}
+
+// track styles
+.tracker .list-menu li {
+  padding: 0.5vw 5.2vw;
+}
+
+}
+
+@media (min-width: $medium) and (max-width:$xmedium - 1) {
+
+  html {
+    font-size: 32px;
   }
 
   // setup-page styles
 
   .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
   .wrapper-setup-page .input-field [type="radio"]:checked + label {
-      padding: 0.1rem 0.66rem 0 0.65rem;
+      padding: 0.2rem 0.66rem 0 0.55rem;
   }
 
   .wrapper-setup-page [type="radio"] + label:before,
@@ -462,9 +1209,33 @@ line-height: 1.4rem;
       height: 1.1rem;
   }
 
+  // profile page styles
+
+  .wrapper-profile-page .wrapper-tick-icon {
+    padding: 1.5vw;
+  }
+
+  .wrapper-profile-page .tick {
+    font-size: 2.7rem;
+    padding-left: 3vw;
+    line-height: 3.5rem;
+  }
+
+  // baby-tracker-1 styles
+
+.wrapper-tracker-1 .list-tracking a {
+  top: 3.5vw;
+  font-size: 1.1rem;
 }
 
-@media (min-width: 730px) {
+// track styles
+.tracker .list-menu li {
+  padding: 0.5vw 5.2vw;
+}
+
+}
+
+@media (min-width: $xmedium) {
 
   html {
     font-size: 38px;
@@ -494,12 +1265,76 @@ line-height: 1.4rem;
     height: 0.5rem;
   }
 
+  // select lines
+  .calendar-wrapper .lines,
+  .tracker .lines {
+    top: 20vw;
+  }
+
+  // profile page styles
+
+  .wrapper-profile-page .wrapper-tick-icon {
+    padding: 1.5vw;
+  }
+
+  .wrapper-profile-page .tick {
+    font-size: 2.7rem;
+    padding-left: 3vw;
+    line-height: 3.5rem;
+  }
+
+// progress-page styles
+
+.wrapper-progress-page li {
+  background-size: 4.5%;
 }
 
-@media (min-width: 900px) {
+.wrapper-progress-page .milestone-list a,
+.wrapper-progress-page .vaccines-list a {
+  top: 3.3vw;
+}
+
+.wrapper-progress-page .milestone-list span,
+.wrapper-progress-page .vaccines-list span {
+  top: 0.5vw;
+}
+
+// baby-tracker-1 styles
+
+.wrapper-tracker-1 .list-tracking a {
+    top: 3.6vw;
+}
+
+// track styles
+.tracker .list-menu li {
+  padding: 0.5vw 5.1vw;
+}
+
+.tracker .list-menu ul {
+    border-radius: 8px;
+}
+
+}
+
+@media (min-width: $xmedium) and (max-width:$large - 1)and (orientation: landscape) {
+
+  // select lines
+  .calendar-wrapper .lines,
+  .tracker .lines {
+    top: 21vw;
+}
+
+}
+
+@media (min-width: $large) {
 
   .header .headering {
     font-size: 1.6rem;
+  }
+
+
+  .wrapper-setup-birthdate .exclamation-mark {
+    height: 4rem;
   }
 
   // calendar styles
@@ -517,10 +1352,44 @@ line-height: 1.4rem;
     width: 7rem;
   }
 
+  // select lines
+  .calendar-wrapper .lines,
+  .tracker .lines {
+    top: 15vw;
+  }
+
 // landing page styles
 
   .wrapper-landing-page .link-wrapper .sign-up {
     font-size: 1.9rem;
+  }
+
+  // profile page styles
+
+  .wrapper-profile-page .tick {
+    font-size: 4rem;
+    padding-left: 2.5vw;
+    line-height: 4.5rem;
+  }
+
+  // progress-page styles
+
+  .wrapper-progress-page .milestone-list a,
+  .wrapper-progress-page .vaccines-list a {
+    top: 3vw;
+  }
+
+  // baby-tracker styles
+
+  .wrapper-tracker-1 .list-tracking li {
+    min-height: 13vw;
+    background-position-x: 15vw;
+    background-size: 4.5%;
+  }
+
+  // track styles
+  .tracker .list-menu li {
+    padding: 0.5vw 6.7vw;
   }
 
 }
