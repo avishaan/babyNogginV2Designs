@@ -8,20 +8,20 @@ html {
   font-size: $html-font-size;
 }
 
-body {
+.page-wrapper {
   background-image: url(../img/background.png);
 }
 
-img {
+.page-wrapper img {
   width: 100%;
 }
 
-.header {
+.page-wrapper .header {
   min-height: $header-height;
   position: relative;
 }
 
-.header .headering {
+.page-wrapper .header .headering {
   color: $heading-color;
   position: absolute;
   top: $headering-top-position;
@@ -30,40 +30,40 @@ img {
   text-align: center;
 }
 
-.header .arrow-back {
+.page-wrapper .header .arrow-back {
   position: absolute;
   top: $arrow-pos-top;
   left: $arrow-pos-left;
 }
 
-.header img {
+.page-wrapper .header img {
   width: $header-icon-width;
 }
 
-.header .menu {
+.page-wrapper .header .menu {
   position: absolute;
   top: $menu-pos-top;
   right: $menu-pos-right;
 }
 
-.content {
+.page-wrapper .content {
   border-radius: 345px/50px;
   background-color: $background-content;
   overflow: hidden;
   min-height: $content-min-height;
 }
 
-.footer {
+.page-wrapper .footer {
   min-height: $footer-min-height;
 }
 
 // landing page styles
 
-.wrapper-landing-page .content {
+#landing-page .content {
   min-height: 75vw;
 }
 
-.wrapper-landing-page .logo {
+#landing-page .logo {
   background-image: url(../img/logo.png);
   background-size: 85%;
   background-position-x: center;
@@ -71,17 +71,17 @@ img {
   min-height: 26vw;
 }
 
-.wrapper-landing-page .link-wrapper {
+#landing-page .link-wrapper {
   margin-bottom: 8vw;
 }
 
-.wrapper-landing-page .link-wrapper li {
+#landing-page .link-wrapper li {
   min-height: 20vw;
   position: relative;
   border-top: 1px solid $border-color;
 }
 
-.wrapper-landing-page .link-wrapper .sign-up {
+#landing-page .link-wrapper .sign-up {
   color: $link-color;
   position: absolute;
   bottom: 4vw;
@@ -90,7 +90,7 @@ img {
   text-align: center;
 }
 
-.wrapper-landing-page .link-wrapper .sign-in {
+#landing-page .link-wrapper .sign-in {
   color: $link-color;
   position: absolute;
   bottom: 7vw;
@@ -99,7 +99,7 @@ img {
   text-align: center;
 }
 
-.wrapper-landing-page .footer {
+#landing-page .footer {
   min-height: 24vw;
 }
 

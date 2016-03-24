@@ -17,17 +17,17 @@ h1, h2, h3, h4, h5, h6 {
 html {
   font-size: 18px; }
 
-body {
+.page-wrapper {
   background-image: url(../img/background.png); }
 
-img {
+.page-wrapper img {
   width: 100%; }
 
-.header {
+.page-wrapper .header {
   min-height: 22vw;
   position: relative; }
 
-.header .headering {
+.page-wrapper .header .headering {
   color: #ffffff;
   position: absolute;
   top: 10vw;
@@ -35,47 +35,47 @@ img {
   width: 100%;
   text-align: center; }
 
-.header .arrow-back {
+.page-wrapper .header .arrow-back {
   position: absolute;
   top: 11vw;
   left: 7vw; }
 
-.header img {
+.page-wrapper .header img {
   width: 6vw; }
 
-.header .menu {
+.page-wrapper .header .menu {
   position: absolute;
   top: 11vw;
   right: 7vw; }
 
-.content {
+.page-wrapper .content {
   border-radius: 345px/50px;
   background-color: #ffffff;
   overflow: hidden;
   min-height: 83vh; }
 
-.footer {
+.page-wrapper .footer {
   min-height: 14vw; }
 
-.wrapper-landing-page .content {
+#landing-page .content {
   min-height: 75vw; }
 
-.wrapper-landing-page .logo {
+#landing-page .logo {
   background-image: url(../img/logo.png);
   background-size: 85%;
   background-position-x: center;
   background-repeat: no-repeat;
   min-height: 26vw; }
 
-.wrapper-landing-page .link-wrapper {
+#landing-page .link-wrapper {
   margin-bottom: 8vw; }
 
-.wrapper-landing-page .link-wrapper li {
+#landing-page .link-wrapper li {
   min-height: 20vw;
   position: relative;
   border-top: 1px solid #a7a9ac; }
 
-.wrapper-landing-page .link-wrapper .sign-up {
+#landing-page .link-wrapper .sign-up {
   color: #f0712c;
   position: absolute;
   bottom: 4vw;
@@ -83,7 +83,7 @@ img {
   width: 100%;
   text-align: center; }
 
-.wrapper-landing-page .link-wrapper .sign-in {
+#landing-page .link-wrapper .sign-in {
   color: #f0712c;
   position: absolute;
   bottom: 7vw;
@@ -91,7 +91,7 @@ img {
   width: 100%;
   text-align: center; }
 
-.wrapper-landing-page .footer {
+#landing-page .footer {
   min-height: 24vw; }
 
 .wrapper-setup-page input:not([type]),
