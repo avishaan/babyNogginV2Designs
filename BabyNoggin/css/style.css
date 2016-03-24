@@ -12,13 +12,13 @@ ul {
 html {
   font-size: 18px; }
 
+.page-wrapper {
+  background-image: url(../img/background.png); }
+
 .page-wrapper .clear-fix:after {
   content: "";
   display: table;
   clear: both; }
-
-.page-wrapper {
-  background-image: url(../img/background.png); }
 
 .page-wrapper img {
   width: 100%; }
@@ -580,17 +580,17 @@ div.inside, div.outside {
   text-align: center;
   width: 100%; }
 
-.wrapper-tracker-1 .description {
+#baby-tracker .description {
   color: #585a5b;
   padding: 0 5vw;
   margin-bottom: 3vw;
   font-size: 0.9rem;
   text-align: center; }
 
-.wrapper-tracker-1 .list-tracking {
+#baby-tracker .list-tracking {
   margin-bottom: 8vw; }
 
-.wrapper-tracker-1 .list-tracking li {
+#baby-tracker .list-tracking li {
   position: relative;
   min-height: 15vw;
   padding: 0 5vw;
@@ -600,22 +600,22 @@ div.inside, div.outside {
   background-size: 6.5%;
   border-bottom: 1px solid #a7a9ac; }
 
-.wrapper-tracker-1 .list-tracking li:last-child {
+#baby-tracker .list-tracking li:last-child {
   border-bottom: none; }
 
-.wrapper-tracker-1 .list-tracking .keep-track {
+#baby-tracker .list-tracking .keep-track {
   background-image: url(../img/crossing-eyes-icon.png); }
 
-.wrapper-tracker-1 .list-tracking .record-sleep {
+#baby-tracker .list-tracking .record-sleep {
   background-image: url(../img/eyes-icon.png); }
 
-.wrapper-tracker-1 .list-tracking .vacciness {
+#baby-tracker .list-tracking .vacciness {
   background-image: url(../img/message-icon.png); }
 
-.wrapper-tracker-1 .list-tracking .diary {
-  background-image: url(../img/message-icon.png); }
+#baby-tracker .list-tracking .diary {
+  background-image: url(../img/arrow-icon-blue.png); }
 
-.wrapper-tracker-1 .list-tracking a {
+#baby-tracker .list-tracking a {
   position: absolute;
   top: 3.2vw;
   left: 25vw;
@@ -869,7 +869,7 @@ div.inside, div.outside {
     width: 2.4rem;
     height: 1.2rem; }
 
-  .wrapper-tracker-1 .list-tracking li {
+  #baby-tracker .list-tracking li {
     background-size: 6.5%; } }
 @media (min-width: 400px) and (max-width: 599px) {
   html {
@@ -937,7 +937,7 @@ div.inside, div.outside {
   #profile-progress .vaccines-list span {
     top: 0.7vw; }
 
-  .wrapper-tracker-1 .list-tracking a {
+  #baby-tracker .list-tracking a {
     top: 3.6vw;
     font-size: 1.1rem; }
 
@@ -963,7 +963,7 @@ div.inside, div.outside {
     padding-left: 3vw;
     line-height: 3.5rem; }
 
-  .wrapper-tracker-1 .list-tracking a {
+  #baby-tracker .list-tracking a {
     top: 3.5vw;
     font-size: 1.1rem; }
 
@@ -1012,7 +1012,7 @@ div.inside, div.outside {
   #profile-progress .vaccines-list span {
     top: 0.5vw; }
 
-  .wrapper-tracker-1 .list-tracking a {
+  #baby-tracker .list-tracking a {
     top: 3.6vw; }
 
   .tracker .list-menu li {
@@ -1061,7 +1061,7 @@ div.inside, div.outside {
   #profile-progress .vaccines-list span {
     top: 2vw; }
 
-  .wrapper-tracker-1 .list-tracking li {
+  #baby-tracker .list-tracking li {
     min-height: 13vw;
     background-position-x: 15vw;
     background-size: 4.5%; }

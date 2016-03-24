@@ -8,14 +8,14 @@ html {
   font-size: $html-font-size;
 }
 
+.page-wrapper {
+  background-image: url(../img/background.png);
+}
+
 .page-wrapper .clear-fix:after {
     content: "";
     display: table;
     clear: both;
-}
-
-.page-wrapper {
-  background-image: url(../img/background.png);
 }
 
 .page-wrapper img {
@@ -711,9 +711,9 @@ div.inside, div.outside {
   width: 100%;
 }
 
-// baby tracker 1 styles
+// baby tracker styles
 
-.wrapper-tracker-1 .description {
+#baby-tracker .description {
   color: $text-color;
   padding: 0 5vw;
   margin-bottom: 3vw;
@@ -721,11 +721,11 @@ div.inside, div.outside {
   text-align: center;
 }
 
-.wrapper-tracker-1 .list-tracking {
+#baby-tracker .list-tracking {
   margin-bottom: 8vw;
 }
 
-.wrapper-tracker-1 .list-tracking li {
+#baby-tracker .list-tracking li {
   position: relative;
   min-height: 15vw;
   padding: 0 5vw;
@@ -736,27 +736,27 @@ div.inside, div.outside {
   border-bottom: 1px solid $border-color;
 }
 
-.wrapper-tracker-1 .list-tracking li:last-child {
+#baby-tracker .list-tracking li:last-child {
   border-bottom: none;
 }
 
-.wrapper-tracker-1 .list-tracking .keep-track {
+#baby-tracker .list-tracking .keep-track {
   background-image: url(../img/crossing-eyes-icon.png);
 }
 
-.wrapper-tracker-1 .list-tracking .record-sleep {
+#baby-tracker .list-tracking .record-sleep {
   background-image: url(../img/eyes-icon.png);
 }
 
-.wrapper-tracker-1 .list-tracking .vacciness {
+#baby-tracker .list-tracking .vacciness {
   background-image: url(../img/message-icon.png);
 }
 
-.wrapper-tracker-1 .list-tracking .diary {
-  background-image: url(../img/message-icon.png);
+#baby-tracker .list-tracking .diary {
+  background-image: url(../img/arrow-icon-blue.png);
 }
 
-.wrapper-tracker-1 .list-tracking a {
+#baby-tracker .list-tracking a {
   position: absolute;
   top: 3.2vw;
   left: 25vw;
@@ -1073,7 +1073,7 @@ div.inside, div.outside {
 
   // baby tracker 1 styles
 
-  .wrapper-tracker-1 .list-tracking li {
+  #baby-tracker .list-tracking li {
     background-size: 6.5%;
   }
 
@@ -1186,7 +1186,7 @@ div.inside, div.outside {
 
 // baby-tracker-1 styles
 
-.wrapper-tracker-1 .list-tracking a {
+#baby-tracker .list-tracking a {
   top: 3.6vw;
   font-size: 1.1rem;
 }
@@ -1230,7 +1230,7 @@ div.inside, div.outside {
 
   // baby-tracker-1 styles
 
-.wrapper-tracker-1 .list-tracking a {
+#baby-tracker .list-tracking a {
   top: 3.5vw;
   font-size: 1.1rem;
 }
@@ -1308,7 +1308,7 @@ div.inside, div.outside {
 
 // baby-tracker-1 styles
 
-.wrapper-tracker-1 .list-tracking a {
+#baby-tracker .list-tracking a {
     top: 3.6vw;
 }
 
@@ -1395,7 +1395,7 @@ div.inside, div.outside {
 
   // baby-tracker styles
 
-  .wrapper-tracker-1 .list-tracking li {
+  #baby-tracker .list-tracking li {
     min-height: 13vw;
     background-position-x: 15vw;
     background-size: 4.5%;
