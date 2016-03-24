@@ -764,44 +764,97 @@ div.inside, div.outside {
   font-size: 1rem;
 }
 
-// baby tracker 2 styles
+// baby trackers styles
 
-.tracker .content {
+.tracker-wrapper .content {
   padding: 5vw 0;
 }
 
-.tracker .list-menu {
+.tracker-wrapper .list-menu {
   padding: 0 5vw;
 }
 
-.tracker .list-menu ul{
+.tracker-wrapper .list-menu ul{
   border: 1px solid $border-color;
   border-radius: 5px;
   overflow: hidden;
+  margin: 6vw 0;
 }
 
-.tracker .list-menu li {
+.tracker-wrapper .list-menu li {
   float: left;
   padding: 0.5vw 4.2vw;
   border-right: 1px solid $border-color;
 }
 
-.tracker .list-menu li:last-child {
+.tracker-wrapper .list-menu li:last-child {
   border: none;
 }
 
-.tracker .list-menu .active-link {
+.tracker-wrapper .list-menu .active-link {
   background-color: $radio-buttons-color;
 }
 
-.tracker .list-menu a {
+.tracker-wrapper .list-menu a {
   font-size: 0.85rem;
   color: $link-color;
 }
 
-.tracker .list-menu .active-link a {
+.tracker-wrapper .list-menu .active-link a {
   color: $heading-color;
 }
+
+
+// baby trackers styles
+
+.tracker-wrapper .wrapper-menu-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8vw;
+  padding: 0 5vw;
+}
+
+.tracker-wrapper .wrapper-menu-form a {
+  color: $link-color;
+}
+
+.tracker-wrapper .button {
+  @include button-styles;
+  padding: 0;
+}
+
+.tracker-wrapper h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #159fc0;
+  margin-bottom: 4vw;
+}
+
+.tracker-wrapper .wrapper-select {
+  min-height: 60vw;
+  margin-bottom: 5vw;
+  position: relative;
+}
+
+.tracker-wrapper .lines {
+  border-top: solid 1px $lines-select;
+  border-bottom: solid 1px $lines-select;
+  position: absolute;
+  top: 23vw;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+}
+
+.tracker-wrapper .choose-time {
+  position: relative;
+  min-height: 60vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+// wrapper tracker 2 styles
 
 .wrapper-tracker-2 .change-date {
   display: flex;
@@ -892,56 +945,6 @@ div.inside, div.outside {
 
 }
 
-// baby trackers styles
-
-.tracker .wrapper-menu-form {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8vw;
-  padding: 0 5vw;
-}
-
-.tracker .wrapper-menu-form a {
-  color: $link-color;
-}
-
-.tracker .button {
-  border: none;
-  background-color: $background-content;
-  color: $link-color;
-  padding: 0;
-}
-
-.tracker h2 {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #159fc0;
-  margin-bottom: 4vw;
-}
-
-.tracker .wrapper-select {
-  min-height: 60vw;
-  margin-bottom: 5vw;
-  position: relative;
-}
-
-.tracker .lines {
-  border-top: solid 1px $lines-select;
-  border-bottom: solid 1px $lines-select;
-  position: absolute;
-  top: 23vw;
-  left: 0;
-  width: 100%;
-  height: 2rem;
-}
-
-.tracker .choose-time {
-  position: relative;
-  min-height: 60vw;
-  margin-bottom: 5vw;
-  display: flex;
-  justify-content: center;
-}
 
 // baby tracker 3 styles
 
@@ -1071,7 +1074,7 @@ div.inside, div.outside {
       height: 1.2rem;
   }
 
-  // baby tracker 1 styles
+  // baby tracker styles
 
   #baby-tracker .list-tracking li {
     background-size: 6.5%;
@@ -1109,7 +1112,7 @@ div.inside, div.outside {
 
   // select lines
   .calendar-wrapper .lines,
-  .tracker .lines {
+  .tracker-wrapper .lines {
     top: 23.5vw;
   }
 
@@ -1131,13 +1134,13 @@ div.inside, div.outside {
   }
 
   // track styles
-  .tracker .list-menu li {
+.tracker-wrapper .list-menu li {
     padding: 0.5vw 5.2vw;
 }
 
 // select lines
 .calendar-wrapper .lines,
-.tracker .lines {
+.tracker-wrapper .lines {
   top: 20.5vw;
 }
 
@@ -1164,7 +1167,7 @@ div.inside, div.outside {
 
 // select lines
 .calendar-wrapper .lines,
-.tracker .lines {
+.tracker-wrapper .lines {
   top: 20vw;
 }
 
@@ -1192,7 +1195,7 @@ div.inside, div.outside {
 }
 
 // track styles
-.tracker .list-menu li {
+.tracker-wrapper .list-menu li {
   padding: 0.5vw 5.2vw;
 }
 
@@ -1236,7 +1239,7 @@ div.inside, div.outside {
 }
 
 // track styles
-.tracker .list-menu li {
+.tracker-wrapper .list-menu li {
   padding: 0.5vw 5.2vw;
 }
 
@@ -1274,7 +1277,7 @@ div.inside, div.outside {
 
   // select lines
   .calendar-wrapper .lines,
-  .tracker .lines {
+  .tracker-wrapper .lines {
     top: 20vw;
   }
 
@@ -1313,11 +1316,11 @@ div.inside, div.outside {
 }
 
 // track styles
-.tracker .list-menu li {
+.tracker-wrapper .list-menu li {
   padding: 0.5vw 5.1vw;
 }
 
-.tracker .list-menu ul {
+.tracker-wrapper .list-menu ul {
     border-radius: 8px;
 }
 
@@ -1327,7 +1330,7 @@ div.inside, div.outside {
 
   // select lines
   .calendar-wrapper .lines,
-  .tracker .lines {
+  .tracker-wrapper .lines {
     top: 21vw;
 }
 
@@ -1367,7 +1370,7 @@ div.inside, div.outside {
 
   // select lines
   .calendar-wrapper .lines,
-  .tracker .lines {
+  .tracker-wrapper .lines {
     top: 15vw;
   }
 
@@ -1402,7 +1405,7 @@ div.inside, div.outside {
   }
 
   // track styles
-  .tracker .list-menu li {
+  .tracker-wrapper .list-menu li {
     padding: 0.5vw 6.7vw;
   }
 
