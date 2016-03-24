@@ -198,27 +198,30 @@ html {
   background-color: #ffffff;
   color: #f0712c; }
 
-.wrapper-setup-birthdate .content,
-.wrapper-due-date .content {
+#setup-birthdate .content,
+#setup-due-date .content {
   padding: 20vw 0 5vw; }
 
-.wrapper-form-heading {
+#setup-birthdate .wrapper-form-heading,
+#setup-due-date .wrapper-form-heading {
   margin-bottom: 10vw;
   position: relative;
   padding: 0 10vw; }
 
-.wrapper-form-heading h3 {
+#setup-birthdate .wrapper-form-heading h3,
+#setup-due-date .wrapper-form-heading h3 {
   display: inline-block;
   font-size: 1rem;
   color: #39b9de; }
 
-.wrapper-form-heading .button {
-  position: absolute;
-  right: 10vw;
-  font-size: 1rem;
+#setup-birthdate .wrapper-form-heading .button,
+#setup-due-date .wrapper-form-heading .button {
   border: none;
   background-color: #ffffff;
   color: #f0712c;
+  position: absolute;
+  right: 10vw;
+  font-size: 1rem;
   height: 100%; }
 
 .calendar-wrapper {
@@ -248,10 +251,11 @@ div.inside, div.outside {
   top: 1rem;
   height: 8.7rem; }
 
-#drum_month .container, #drum_month figure {
+#drum_month figure {
   height: 2.1rem; }
 
 #drum_month .container {
+  height: 2.1rem;
   top: 3.4rem; }
 
 #drum_month figure {
@@ -268,10 +272,11 @@ div.inside, div.outside {
   top: 1rem;
   height: 8.7rem; }
 
-#drum_day .container, #drum_day figure {
+#drum_day figure {
   height: 2.1rem; }
 
 #drum_day .container {
+  height: 2.1rem;
   top: 3.4rem; }
 
 #drum_day figure {
@@ -288,10 +293,11 @@ div.inside, div.outside {
   top: 1rem;
   height: 8.7rem; }
 
-#drum_year .container, #drum_year figure {
+#drum_year figure {
   height: 2.1rem; }
 
 #drum_year .container {
+  height: 2.1rem;
   top: 3.4rem; }
 
 #drum_year figure {
@@ -299,7 +305,7 @@ div.inside, div.outside {
   font-size: 1.2rem;
   line-height: 1.4rem; }
 
-.wrapper-setup-birthdate .exclamation-mark {
+#setup-birthdate .exclamation-mark {
   width: 100%;
   height: 3rem;
   background-image: url(../img/exclamation-mark.png);
@@ -307,12 +313,12 @@ div.inside, div.outside {
   background-size: 13%;
   background-position: center; }
 
-.wrapper-setup-birthdate .message {
+#setup-birthdate .message {
   font-size: 0.9rem;
   text-align: center;
   padding: 4vw 10vw; }
 
-.wrapper-setup-birthdate .message a {
+#setup-birthdate .message a {
   color: #f0712c;
   text-decoration: none; }
 
@@ -1020,7 +1026,7 @@ div.inside, div.outside {
   #landing-page .link-wrapper .sign-up {
     font-size: 1.9rem; }
 
-  .wrapper-setup-birthdate .exclamation-mark {
+  #setup-birthdate .exclamation-mark {
     height: 4rem; }
 
   .calendar-wrapper {
