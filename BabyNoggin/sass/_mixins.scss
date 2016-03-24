@@ -33,3 +33,11 @@
   height: 2.1rem;
   top: 3.4rem;
 }
+
+//
+
+@mixin birthdate-wrapper {
+  position: relative;
+  min-height: 20vw;
+  border-bottom: 1px solid $border-color;
+}

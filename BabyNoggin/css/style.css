@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+ul {
+  margin: 0; }
+
 html {
   font-size: 18px; }
 
@@ -322,12 +325,12 @@ div.inside, div.outside {
   color: #f0712c;
   text-decoration: none; }
 
-.wrapper-profile-page .birthdate-wrapper {
+#profile-page .birthdate-wrapper {
   position: relative;
   min-height: 20vw;
   border-bottom: 1px solid #a7a9ac; }
 
-.wrapper-profile-page .wrapper-tick-icon {
+#profile-page .wrapper-tick-icon {
   position: absolute;
   top: -9vw;
   left: 14vw;
@@ -337,7 +340,7 @@ div.inside, div.outside {
   width: 20vw;
   height: 25vw; }
 
-.wrapper-profile-page .birthdate {
+#profile-page .birthdate {
   position: absolute;
   top: 2vw;
   right: 14vw;
@@ -345,15 +348,15 @@ div.inside, div.outside {
   color: #585a5b;
   line-height: 1.2rem; }
 
-.wrapper-profile-page .birthdate span {
+#profile-page .birthdate span {
   font-weight: bold; }
 
-.wrapper-profile-page .progress-link {
+#profile-page .progress-link {
   position: relative;
   min-height: 16.5vw;
   border-bottom: 1px solid #a7a9ac; }
 
-.wrapper-profile-page .progress-link a {
+#profile-page .progress-link a {
   color: #f0712c;
   position: absolute;
   bottom: 4vw;
@@ -361,29 +364,29 @@ div.inside, div.outside {
   width: 100%;
   text-align: center; }
 
-.wrapper-profile-page .milestone-wrapper {
+#profile-page .milestone-wrapper {
   position: relative;
   min-height: 25vw; }
 
-.wrapper-profile-page .milestone-wrapper h5 {
+#profile-page .milestone-wrapper h5 {
   text-align: center;
   font-size: 1rem;
   color: #585a5b;
   margin: 4vw 0 1vw; }
 
-.wrapper-profile-page .milestone-wrapper a {
+#profile-page .milestone-wrapper a {
   position: absolute;
   width: 100%;
   text-align: center;
   color: #f0712c;
   font-size: 1.05rem; }
 
-.wrapper-progress-page .birthdate-wrapper {
+#profile-progress .birthdate-wrapper {
   position: relative;
   min-height: 20vw;
   border-bottom: 1px solid #a7a9ac; }
 
-.wrapper-progress-page .wrapper-daisy-icon {
+#profile-progress .wrapper-daisy-icon {
   position: absolute;
   top: -20vw;
   left: 5vw;
@@ -393,7 +396,7 @@ div.inside, div.outside {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-.wrapper-progress-page .birthdate {
+#profile-progress .birthdate {
   position: absolute;
   top: 2vw;
   right: 9vw;
@@ -402,32 +405,32 @@ div.inside, div.outside {
   line-height: 1.2rem;
   font-size: 0.9rem; }
 
-.wrapper-progress-page .birthdate span {
+#profile-progress .birthdate span {
   font-weight: bold; }
 
-.wrapper-progress-page .period-time {
+#profile-progress .period-time {
   display: flex;
   justify-content: space-between;
   padding: 5vw 5vw 0;
   font-size: 0.9rem; }
 
-.wrapper-progress-page .period-time span {
+#profile-progress .period-time span {
   color: #3ccfd4; }
 
-.wrapper-progress-page .period-time a {
+#profile-progress .period-time a {
   color: #585a5b; }
 
-.wrapper-progress-page .period-time .active-link {
+#profile-progress .period-time .active-link {
   color: #f0712c; }
 
-.wrapper-progress-page .milestone-heading,
-.wrapper-progress-page .vaccines-heading {
+#profile-progress .milestone-heading,
+#profile-progress .vaccines-heading {
   position: relative;
   min-height: 13vw;
   font-size: 0.9rem; }
 
-.wrapper-progress-page .milestone-heading h3,
-.wrapper-progress-page .vaccines-heading h3 {
+#profile-progress .milestone-heading h3,
+#profile-progress .vaccines-heading h3 {
   text-transform: uppercase;
   display: inline-block;
   margin: 0;
@@ -436,69 +439,68 @@ div.inside, div.outside {
   left: 5vw;
   font-size: 0.9rem; }
 
-.wrapper-progress-page .milestone-heading a,
-.wrapper-progress-page .vaccines-heading a {
+#profile-progress .milestone-heading a,
+#profile-progress .vaccines-heading a {
   position: absolute;
   top: 3.3vw;
   right: 5vw;
   color: #f0712c; }
 
-.wrapper-progress-page .milestone-list li,
-.wrapper-progress-page .vaccines-list li {
+#profile-progress .milestone-list li,
+#profile-progress .vaccines-list li {
   position: relative;
   min-height: 13vw;
   padding: 0 5vw; }
 
-.wrapper-progress-page .milestone-list li:nth-child(odd),
-.wrapper-progress-page .vaccines-list li:nth-child(odd) {
+#profile-progress .milestone-list li:nth-child(odd),
+#profile-progress .vaccines-list li:nth-child(odd) {
   background-color: #d6ecec; }
 
-.wrapper-progress-page li {
+#profile-progress li {
   background-repeat: no-repeat;
   background-position-x: 5vw;
   background-position-y: center;
   background-size: 5.5%; }
 
-.wrapper-progress-page .crossing-eyes {
+#profile-progress .crossing-eyes {
   background-image: url(../img/crossing-eyes-icon.png); }
 
-.wrapper-progress-page .covered-toy {
+#profile-progress .covered-toy {
   background-image: url(../img/eyes-icon.png); }
 
-.wrapper-progress-page .back-front {
+#profile-progress .back-front {
   background-image: url(../img/message-icon.png); }
 
-.wrapper-progress-page .milestone-list a {
+#profile-progress .milestone-list a,
+#profile-progress .vaccines-list a {
   position: absolute;
   top: 3vw;
   left: 12vw;
   color: #f0712c;
   font-size: 0.9rem; }
 
-.wrapper-progress-page .vaccines-list a {
-  position: absolute;
-  top: 3vw;
-  left: 5vw;
-  color: #f0712c;
-  font-size: 0.9rem; }
+#profile-progress .vaccines-list li:last-child {
+  border-bottom: 1px solid #a7a9ac; }
 
-.wrapper-progress-page .milestone-list span,
-.wrapper-progress-page .vaccines-list span {
+#profile-progress .vaccines-list a {
+  left: 5vw; }
+
+#profile-progress .milestone-list span,
+#profile-progress .vaccines-list span {
   position: absolute;
   right: 5vw;
   font-size: 1.5rem;
   color: #585a5b; }
 
-.wrapper-progress-page .favorites-heading {
+#profile-progress .favorites-heading {
   position: relative;
   min-height: 13vw;
   font-size: 0.9rem; }
 
-.wrapper-progress-page .favorites {
-  border-top: 1px solid #a7a9ac;
+#profile-progress .favorites {
   margin-bottom: 15vw; }
 
-.wrapper-progress-page .favorites-heading h3 {
+#profile-progress .favorites-heading h3 {
   display: inline-block;
   position: absolute;
   top: 4.5vw;
@@ -506,13 +508,13 @@ div.inside, div.outside {
   font-size: 0.9rem;
   color: #3ccfd4; }
 
-.wrapper-progress-page .favorites-heading a {
+#profile-progress .favorites-heading a {
   position: absolute;
   top: 3vw;
   right: 5vw;
   color: #f0712c; }
 
-.wrapper-progress-page .favorites-list a {
+#profile-progress .favorites-list a {
   padding: 0 5vw;
   color: #f0712c;
   font-size: 0.9rem; }
@@ -889,11 +891,11 @@ div.inside, div.outside {
   .tracker .lines {
     top: 23.5vw; }
 
-  .wrapper-progress-page .milestone-list a,
-  .wrapper-progress-page .vaccines-list a {
+  #profile-progress .milestone-list a,
+  #profile-progress .vaccines-list a {
     top: 2.6vw; } }
 @media (min-width: 400px) and (max-width: 489px) and (orientation: landscape) {
-  .wrapper-profile-page .tick {
+  #profile-page .tick {
     font-size: 3rem;
     padding-left: 2.2vw;
     line-height: 3.5rem; }
@@ -912,7 +914,7 @@ div.inside, div.outside {
   #setup-page [type="radio"] + label:after {
     height: 1.1rem; }
 
-  .wrapper-profile-page .tick {
+  #profile-page .tick {
     font-size: 3rem;
     padding-left: 2.2vw;
     line-height: 3.5rem; }
@@ -921,15 +923,15 @@ div.inside, div.outside {
   .tracker .lines {
     top: 20vw; }
 
-  .wrapper-progress-page li {
+  #profile-progress li {
     background-size: 4.5%; }
 
-  .wrapper-progress-page .milestone-list a,
-  .wrapper-progress-page .vaccines-list a {
+  #profile-progress .milestone-list a,
+  #profile-progress .vaccines-list a {
     top: 3.7vw; }
 
-  .wrapper-progress-page .milestone-list span,
-  .wrapper-progress-page .vaccines-list span {
+  #profile-progress .milestone-list span,
+  #profile-progress .vaccines-list span {
     top: 0.7vw; }
 
   .wrapper-tracker-1 .list-tracking a {
@@ -950,10 +952,10 @@ div.inside, div.outside {
   #setup-page [type="radio"] + label:after {
     height: 1.1rem; }
 
-  .wrapper-profile-page .wrapper-tick-icon {
+  #profile-page .wrapper-tick-icon {
     padding: 1.5vw; }
 
-  .wrapper-profile-page .tick {
+  #profile-page .tick {
     font-size: 2.7rem;
     padding-left: 3vw;
     line-height: 3.5rem; }
@@ -988,23 +990,23 @@ div.inside, div.outside {
   .tracker .lines {
     top: 20vw; }
 
-  .wrapper-profile-page .wrapper-tick-icon {
+  #profile-page .wrapper-tick-icon {
     padding: 1.5vw; }
 
-  .wrapper-profile-page .tick {
+  #profile-page .tick {
     font-size: 2.7rem;
     padding-left: 3vw;
     line-height: 3.5rem; }
 
-  .wrapper-progress-page li {
+  #profile-progress li {
     background-size: 4.5%; }
 
-  .wrapper-progress-page .milestone-list a,
-  .wrapper-progress-page .vaccines-list a {
+  #profile-progress .milestone-list a,
+  #profile-progress .vaccines-list a {
     top: 3.3vw; }
 
-  .wrapper-progress-page .milestone-list span,
-  .wrapper-progress-page .vaccines-list span {
+  #profile-progress .milestone-list span,
+  #profile-progress .vaccines-list span {
     top: 0.5vw; }
 
   .wrapper-tracker-1 .list-tracking a {
@@ -1043,14 +1045,18 @@ div.inside, div.outside {
   .tracker .lines {
     top: 15vw; }
 
-  .wrapper-profile-page .tick {
+  #profile-page .tick {
     font-size: 4rem;
     padding-left: 2.5vw;
     line-height: 4.5rem; }
 
-  .wrapper-progress-page .milestone-list a,
-  .wrapper-progress-page .vaccines-list a {
-    top: 3vw; }
+  #profile-progress .milestone-list a,
+  #profile-progress .vaccines-list a {
+    top: 4vw; }
+
+  #profile-progress .milestone-list span,
+  #profile-progress .vaccines-list span {
+    top: 2vw; }
 
   .wrapper-tracker-1 .list-tracking li {
     min-height: 13vw;
