@@ -519,59 +519,62 @@ div.inside, div.outside {
   color: #f0712c;
   font-size: 0.9rem; }
 
-.wrapper-our-status .icon-status {
+.our-status-wrapper .icon-status {
   height: 40vw;
   background-repeat: no-repeat;
   background-size: 35%;
   background-position-x: center;
   background-position-y: bottom; }
 
-.status-great .icon-status {
+#status-great .icon-status {
   background-image: url(../img/great-daisy.png); }
 
-.status-seek .icon-status {
+#status-seek .icon-status {
   background-image: url(../img/seek-daisy.png); }
 
-.status-test .icon-status {
+#status-test .icon-status {
   background-image: url(../img/tests-daisy.png); }
 
-.status-great .description {
-  padding: 5vw 6vw; }
+#status-great .description {
+  padding: 5vw 6vw;
+  margin-bottom: 5vw; }
 
-.status-test .description, .status-seek .description {
-  padding: 5vw 8vw; }
+#status-test .description,
+#status-seek .description {
+  padding: 5vw 8vw;
+  margin-bottom: 10vw; }
 
-.wrapper-our-status .description h2 {
+.our-status-wrapper .description h2 {
   font-size: 1rem;
   text-align: center;
   color: #159fc0;
   margin-bottom: 4vw; }
 
-.wrapper-our-status .description p {
+.our-status-wrapper .description p {
   text-align: center;
   color: #585a5b; }
 
-.status-great .description p,
-.status-test .description p {
+#status-great .description p,
+#status-test .description p {
   margin-bottom: 12vw; }
 
-.status-seek .description p {
+#status-seek .description p {
   margin-bottom: 4vw; }
 
-.wrapper-our-status .description span {
+.our-status-wrapper .description span {
   font-weight: bold; }
 
-.wrapper-our-status .description a {
+.our-status-wrapper .description a {
   color: #f0712c; }
 
-.status-great .wrapper-link,
-.status-test .wrapper-link {
+#status-great .wrapper-link,
+#status-test .wrapper-link {
   position: relative;
   min-height: 10vw;
   margin-bottom: 10vw; }
 
-.status-great .wrapper-link a,
-.status-test .wrapper-link a {
+#status-great .wrapper-link a,
+#status-test .wrapper-link a {
   position: absolute;
   color: #f0712c;
   text-align: center;
