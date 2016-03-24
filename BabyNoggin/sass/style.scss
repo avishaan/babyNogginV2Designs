@@ -8,6 +8,12 @@ html {
   font-size: $html-font-size;
 }
 
+.page-wrapper .clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .page-wrapper {
   background-image: url(../img/background.png);
 }
@@ -107,60 +113,60 @@ html {
 
 // form styles
 
-.wrapper-setup-page input:not([type]),
-.wrapper-setup-page input[type=text],
-.wrapper-setup-page input[type=password],
-.wrapper-setup-page input[type=email] {
+#setup-page input:not([type]),
+#setup-page input[type=text],
+#setup-page input[type=password],
+#setup-page input[type=email] {
   margin-bottom: 5px;
 }
 
-.wrapper-setup-page input[type=text]:focus,
-.wrapper-setup-page input[type=password]:focus,
-.wrapper-setup-page input[type=email]:focus {
-     border-bottom: 1px solid $form-active-border;
-     box-shadow: 0 1px 0 0 $form-active-border;
-   }
+#setup-page input[type=text]:focus,
+#setup-page input[type=password]:focus,
+#setup-page input[type=email]:focus {
+   border-bottom: 1px solid $form-active-border;
+   box-shadow: 0 1px 0 0 $form-active-border;
+ }
 
-.wrapper-setup-page .input-field {
+#setup-page .input-field {
   margin-top: 0;
 }
 
-.wrapper-setup-page .input-field input {
+#setup-page .input-field input {
   padding-left: 2.5rem;
 }
 
-.wrapper-setup-page .input-field .name-input {
+#setup-page .input-field .name-input {
   margin-top: 0.8rem;
 }
 
 // radio styles
 
-.wrapper-setup-page .radio-wrapper {
+#setup-page .radio-wrapper {
   height: 3.3rem;
   padding-left: 1.6rem;
 }
 
-.wrapper-setup-page [type="radio"] + label:before,
-.wrapper-setup-page [type="radio"] + label:after {
+#setup-page [type="radio"] + label:before,
+#setup-page [type="radio"] + label:after {
     width: 2.5rem;
     height: 1.3rem;
     margin-top: 0;
 }
 
-.wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
-.wrapper-setup-page .input-field [type="radio"]:checked + label {
+#setup-page .input-field [type="radio"]:not(:checked) + label,
+#setup-page .input-field [type="radio"]:checked + label {
     padding: 0 0.66rem 0 0.65rem;
     font-size: 0.8rem;
     text-transform: uppercase;
     margin-right: 0.8rem;
 }
 
-.wrapper-setup-page .wrapper-form [type="radio"]:not(:checked) + label:before {
+#setup-page .wrapper-form [type="radio"]:not(:checked) + label:before {
     border-radius: 0%;
     border: 1px solid $border-color;
 }
 
-.wrapper-setup-page [type="radio"]:checked + label:after {
+#setup-page [type="radio"]:checked + label:after {
     border-radius: 0%;
     border: 1px solid $radio-buttons-color;
     background-color: $radio-buttons-color;
@@ -168,34 +174,34 @@ html {
     transform: scale(1.02);
 }
 
-.wrapper-setup-page [type="radio"]:checked + label {
+#setup-page [type="radio"]:checked + label {
   color: #ffffff;
   z-index: 1;
 }
 
-.wrapper-setup-page .add-border {
+#setup-page .add-border {
   border-bottom: 1px solid $border-color;
   margin-top: $reset;
 }
 
-.wrapper-setup-page input[type=email] {
+#setup-page input[type=email] {
   height: 2.8rem;
 }
 
 // password styles
 
-.wrapper-setup-page .input-field .input-password {
+#setup-page .input-field .input-password {
   border: none;
   margin-bottom: -0.5rem
 }
 
-.wrapper-setup-page input[type=password] {
+#setup-page input[type=password] {
   height: 2.1rem;
 }
 
 // input-file styles
 
-.wrapper-setup-page .input-file-wrapper {
+#setup-page .input-file-wrapper {
   height: 3rem;
   border-bottom: 1px solid $border-color;
   color: $link-color;
@@ -203,49 +209,47 @@ html {
   margin-bottom: 0.5rem;
 }
 
-.wrapper-setup-page .input-file-wrapper > label {
+#setup-page .input-file-wrapper > label {
   color: $link-color;
   padding-left: 1.8rem;
 }
 
 // checkbox styles
 
-.wrapper-setup-page [type="checkbox"].filled-in:checked + label:after {
+#setup-page [type="checkbox"].filled-in:checked + label:after {
     border: 2px solid $radio-buttons-color;
     background-color: $radio-buttons-color;
 }
 
-.wrapper-setup-page .wrapper-checkbox {
+#setup-page .wrapper-checkbox {
   padding-left: 2.4rem;
 }
 
-.wrapper-setup-page .wrapper-checkbox label {
+#setup-page .wrapper-checkbox label {
   font-size: 0.9rem
 }
 
 //
 
-.wrapper-setup-page .link-wrapper {
+#setup-page .link-wrapper {
   padding-left: 2.4rem;
   margin-bottom: 0.5rem;
 }
 
-.wrapper-setup-page .link-wrapper a {
+#setup-page .link-wrapper a {
   color: $link-color;
   font-size: 0.8rem;
 }
 
-.wrapper-setup-page .button-wrapper {
+#setup-page .button-wrapper {
   height: 2.5rem;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
-.wrapper-setup-page .button-wrapper .button {
-  border: none;
-  background-color: $background-content;
-  color: $link-color;
+#setup-page .button-wrapper .button {
+  @include button-styles;
 }
 
 // setup-birthdate page styles and setup-due-date page styles
@@ -1058,8 +1062,8 @@ line-height: 1.4rem;
 
   // setup-page styles
 
-  .wrapper-setup-page [type="radio"] + label:before,
-  .wrapper-setup-page [type="radio"] + label:after {
+  #setup-page [type="radio"] + label:before,
+  #setup-page [type="radio"] + label:after {
       width: 2.4rem;
       height: 1.2rem;
   }
@@ -1089,13 +1093,13 @@ line-height: 1.4rem;
 
   // setup-page styles
 
-  .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
-  .wrapper-setup-page .input-field [type="radio"]:checked + label {
+  #setup-page .input-field [type="radio"]:not(:checked) + label,
+  #setup-page .input-field [type="radio"]:checked + label {
       padding: 0.11rem 0.66rem 0 0.65rem;
   }
 
-  .wrapper-setup-page [type="radio"] + label:before,
-  .wrapper-setup-page [type="radio"] + label:after {
+  #setup-page [type="radio"] + label:before,
+  #setup-page [type="radio"] + label:after {
       width: 2.5rem;
       height: 1.3rem;
   }
@@ -1144,8 +1148,8 @@ line-height: 1.4rem;
 
   // login styles
 
-  .wrapper-setup-page [type="radio"] + label:before,
-  .wrapper-setup-page [type="radio"] + label:after {
+  #setup-page [type="radio"] + label:before,
+  #setup-page [type="radio"] + label:after {
     height: 1.1rem;
 }
 
@@ -1199,13 +1203,13 @@ line-height: 1.4rem;
 
   // setup-page styles
 
-  .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
-  .wrapper-setup-page .input-field [type="radio"]:checked + label {
+  #setup-page .input-field [type="radio"]:not(:checked) + label,
+  #setup-page .input-field [type="radio"]:checked + label {
       padding: 0.2rem 0.66rem 0 0.55rem;
   }
 
-  .wrapper-setup-page [type="radio"] + label:before,
-  .wrapper-setup-page [type="radio"] + label:after {
+  #setup-page [type="radio"] + label:before,
+  #setup-page [type="radio"] + label:after {
       height: 1.1rem;
   }
 
@@ -1249,18 +1253,18 @@ line-height: 1.4rem;
 
   // setup-page styles
 
-  .wrapper-setup-page .input-field [type="radio"]:not(:checked) + label,
-  .wrapper-setup-page .input-field [type="radio"]:checked + label {
+  #setup-page .input-field [type="radio"]:not(:checked) + label,
+  #setup-page .input-field [type="radio"]:checked + label {
       padding: 0.25rem 0.66rem 0 0.45rem;
   }
 
-  .wrapper-setup-page [type="checkbox"].filled-in:checked + label:after,
-  .wrapper-setup-page [type="checkbox"].filled-in:not(:checked) + label:after {
+  #setup-page [type="checkbox"].filled-in:checked + label:after,
+  #setup-page [type="checkbox"].filled-in:not(:checked) + label:after {
      width: 0.7rem;
      height: 0.7rem;
   }
 
-  .wrapper-setup-page [type="checkbox"].filled-in:checked + label:before {
+  #setup-page [type="checkbox"].filled-in:checked + label:before {
     width: 0.3rem;
     height: 0.5rem;
   }
@@ -1332,6 +1336,12 @@ line-height: 1.4rem;
     font-size: 1.6rem;
   }
 
+  // landing page styles
+
+    #landing-page .link-wrapper .sign-up {
+      font-size: 1.9rem;
+    }
+
 
   .wrapper-setup-birthdate .exclamation-mark {
     height: 4rem;
@@ -1358,11 +1368,7 @@ line-height: 1.4rem;
     top: 15vw;
   }
 
-// landing page styles
 
-  .wrapper-landing-page .link-wrapper .sign-up {
-    font-size: 1.9rem;
-  }
 
   // profile page styles
 
