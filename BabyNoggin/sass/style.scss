@@ -12,7 +12,7 @@ html {
   background-image: url(../img/background.png);
 }
 
-.page-wrapper .clear-fix:after {
+.page-wrapper .clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -783,7 +783,7 @@ div.inside, div.outside {
 
 .tracker-wrapper .list-menu li {
   float: left;
-  padding: 0.5vw 4.2vw;
+  padding: 0.1vw 4.2vw 1vw;
   border-right: 1px solid $border-color;
 }
 
@@ -969,6 +969,7 @@ div.inside, div.outside {
 }
 
 // bt-feed-time bt-sleep-time
+
 // select hour styles
 
 #drum_hour {
