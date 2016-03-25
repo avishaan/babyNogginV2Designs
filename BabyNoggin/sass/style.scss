@@ -1099,6 +1099,34 @@ div.inside, div.outside {
   text-align: center;
 }
 
+.milestone-pages .milestone-header h2 {
+  @include description-header;
+  padding: 15vw 0 5vw;
+}
+
+.milestone-pages .link-block {
+  padding: 20vw 0 15vw;
+}
+
+.milestone-pages .link-wrapper {
+  width: 15vw;
+  height: 15vw;
+  margin: auto;
+  border: 2px solid $border-color;
+  border-radius: 50%;
+  background-image: url(../img/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+// milestone activity
+
+#mil-activity-page .video {
+  width: 100%;
+}
+
 // media query styles
 
 @media (min-width: $small) {
