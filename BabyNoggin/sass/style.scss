@@ -1109,16 +1109,20 @@ div.inside, div.outside {
 }
 
 .milestone-pages .link-wrapper {
+  padding: 3vw;
   width: 15vw;
   height: 15vw;
   margin: auto;
   border: 2px solid $border-color;
   border-radius: 50%;
-  background-image: url(../img/arrow-right.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-x: center;
-  background-position-y: center;
+}
+
+.milestone-pages .description {
+  padding: 3vw 5vw 0;
+}
+
+.milestone-pages .description p {
+  @include description-text;
 }
 
 // milestone activity
