@@ -270,43 +270,43 @@ div.inside, div.outside {
   line-height: 1.4rem; }
 
 /* select day styles */
-#drum_day {
+#drum_date {
   width: 2.2rem;
   height: 11rem; }
 
-#drum_day .inner {
+#drum_date .inner {
   top: 1rem;
   height: 8.7rem; }
 
-#drum_day figure {
+#drum_date figure {
   height: 2.1rem; }
 
-#drum_day .container {
+#drum_date .container {
   height: 2.1rem;
   top: 3.4rem; }
 
-#drum_day figure {
+#drum_date figure {
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.4rem; }
 
 /* select year styles */
-#drum_year {
+#drum_fullYear {
   width: 4rem;
   height: 11rem; }
 
-#drum_year .inner {
+#drum_fullYear .inner {
   top: 1rem;
   height: 8.7rem; }
 
-#drum_year figure {
+#drum_fullYear figure {
   height: 2.1rem; }
 
-#drum_year .container {
+#drum_fullYear .container {
   height: 2.1rem;
   top: 3.4rem; }
 
-#drum_year figure {
+#drum_fullYear figure {
   text-align: right;
   font-size: 1.2rem;
   line-height: 1.4rem; }
@@ -948,8 +948,8 @@ div.inside, div.outside {
     font-size: 24px; }
 
   #drum_month .inner,
-  #drum_day .inner,
-  #drum_year .inner {
+  #drum_date .inner,
+  #drum_fullYear .inner {
     top: 1rem;
     height: 8.5rem; }
 
@@ -1116,10 +1116,10 @@ div.inside, div.outside {
     min-height: 55vw;
     margin-bottom: 0; }
 
-  #drum_year {
+  #drum_fullYear {
     width: 5rem; }
 
-  #drum_day {
+  #drum_date {
     width: 7rem; }
 
   .calendar-wrapper .lines,

@@ -331,24 +331,24 @@ div.inside, div.outside {
 
 /* select day styles */
 
-#drum_day {
+#drum_date {
   width: 2.2rem;
   height: 11rem;
 }
 
-#drum_day .inner {
+#drum_date .inner {
   @include select-inner;
 }
 
-#drum_day figure {
+#drum_date figure {
   @include select-figure;
 }
 
-#drum_day .container {
+#drum_date .container {
   @include select-container;
 }
 
-#drum_day figure {
+#drum_date figure {
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.4rem;
@@ -356,22 +356,22 @@ div.inside, div.outside {
 
 /* select year styles */
 
-#drum_year {
+#drum_fullYear {
   width: 4rem;
   height: 11rem;
 }
-#drum_year .inner {
+#drum_fullYear .inner {
   @include select-inner;
 }
 
-#drum_year figure {
+#drum_fullYear figure {
   @include select-figure;
 }
 
-#drum_year .container {
+#drum_fullYear .container {
   @include select-container;
 }
-#drum_year figure {
+#drum_fullYear figure {
   text-align: right;
   font-size: 1.2rem;
   line-height: 1.4rem;
@@ -1164,8 +1164,8 @@ div.inside, div.outside {
   // calendar styles
 
   #drum_month .inner,
-  #drum_day .inner,
-  #drum_year .inner {
+  #drum_date .inner,
+  #drum_fullYear .inner {
     top: 1rem;
     height: 8.5rem;
   }
@@ -1445,11 +1445,11 @@ div.inside, div.outside {
     margin-bottom: 0;
   }
 
-  #drum_year {
+  #drum_fullYear {
     width: 5rem;
   }
 
-  #drum_day {
+  #drum_date {
     width: 7rem;
   }
 
