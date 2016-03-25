@@ -35,3 +35,15 @@
   min-height: 20vw;
   border-bottom: 1px solid $border-color;
 }
+
+@mixin description-header {
+  font-size: 1.2rem;
+  text-align: center;
+  color: $status-header-color;
+  margin-bottom: 4vw;
+}
+
+@mixin description-text {
+  text-align: center;
+  color: $text-color;
+}

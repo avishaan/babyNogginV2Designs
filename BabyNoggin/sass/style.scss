@@ -667,16 +667,11 @@ div.inside, div.outside {
 }
 
 .our-status-wrapper .description h2 {
-  font-size: 1rem;
-  text-align: center;
-  color: $status-header-color;
-  margin-bottom: 4vw;
+  @include description-header;
 }
 
 .our-status-wrapper .description p {
-  text-align: center;
-  color: $text-color;
-
+  @include description-text;
 }
 
 #status-great .description p ,
@@ -1058,6 +1053,47 @@ div.inside, div.outside {
   line-height: 1.4rem;
 }
 
+// milestone styles
+
+#milestone-index .description {
+  padding: 0 7vw;
+  margin-bottom: 5vw;
+}
+
+#milestone-index .description h2 {
+  @include description-header;
+}
+
+#milestone-index .description p {
+  @include description-text;
+}
+
+#milestone-index .description span {
+  font-weight: bold;
+}
+
+#milestone-index .crossing-eyes-test li {
+  border-top: 1px solid $border-color;
+  min-height: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 0;
+}
+
+#milestone-index .crossing-eyes-test li:first-child {
+  background-image: url(../img/crossing-eyes-icon.png);
+  background-repeat: no-repeat;
+  background-position-x: 17vw;
+  background-position-y: center;
+  background-size: 6.5%;
+}
+
+#milestone-index .crossing-eyes-test a {
+  color: $link-color;
+  font-size: 1rem;
+  text-align: center;
+}
 
 // media query styles
 
@@ -1188,7 +1224,7 @@ div.inside, div.outside {
   top: 0.7vw;
 }
 
-// baby-tracker-1 styles
+// baby-tracker styles
 
 #baby-tracker .list-tracking a {
   top: 3.6vw;
@@ -1198,6 +1234,12 @@ div.inside, div.outside {
 // track styles
 .tracker-wrapper .list-menu li {
   padding: 0.5vw 5.2vw;
+}
+
+// milestone styles
+
+#milestone-index .crossing-eyes-test a {
+    font-size: 1.1rem;
 }
 
 }
@@ -1325,6 +1367,12 @@ div.inside, div.outside {
     border-radius: 8px;
 }
 
+// milestone styles
+
+#milestone-index .crossing-eyes-test a {
+    font-size: 1.1rem;
+}
+
 }
 
 @media (min-width: $xmedium) and (max-width:$large - 1)and (orientation: landscape) {
@@ -1408,6 +1456,22 @@ div.inside, div.outside {
   // track styles
   .tracker-wrapper .list-menu li {
     padding: 0.5vw 6.7vw;
+  }
+
+  // milestone styles
+
+  #milestone-index .description h2 {
+    font-size: 1.5rem;
+  }
+
+
+
+  #milestone-index .description p {
+    text-align: center;
+  }
+
+  #milestone-index .crossing-eyes-test a {
+      font-size: 1.3rem;
   }
 
 }

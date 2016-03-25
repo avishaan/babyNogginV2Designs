@@ -9,6 +9,9 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   margin: 0; }
 
+p {
+  margin: 0; }
+
 html {
   font-size: 18px; }
 
@@ -545,7 +548,7 @@ div.inside, div.outside {
   margin-bottom: 10vw; }
 
 .our-status-wrapper .description h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #159fc0;
   margin-bottom: 4vw; }
@@ -861,6 +864,43 @@ div.inside, div.outside {
   font-size: 1.2rem;
   line-height: 1.4rem; }
 
+#milestone-index .description {
+  padding: 0 7vw;
+  margin-bottom: 5vw; }
+
+#milestone-index .description h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #159fc0;
+  margin-bottom: 4vw; }
+
+#milestone-index .description p {
+  text-align: center;
+  color: #585a5b; }
+
+#milestone-index .description span {
+  font-weight: bold; }
+
+#milestone-index .crossing-eyes-test li {
+  border-top: 1px solid #a7a9ac;
+  min-height: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 0; }
+
+#milestone-index .crossing-eyes-test li:first-child {
+  background-image: url(../img/crossing-eyes-icon.png);
+  background-repeat: no-repeat;
+  background-position-x: 17vw;
+  background-position-y: center;
+  background-size: 6.5%; }
+
+#milestone-index .crossing-eyes-test a {
+  color: #f0712c;
+  font-size: 1rem;
+  text-align: center; }
+
 @media (min-width: 350px) {
   html {
     font-size: 21px; }
@@ -943,7 +983,10 @@ div.inside, div.outside {
     font-size: 1.1rem; }
 
   .tracker-wrapper .list-menu li {
-    padding: 0.5vw 5.2vw; } }
+    padding: 0.5vw 5.2vw; }
+
+  #milestone-index .crossing-eyes-test a {
+    font-size: 1.1rem; } }
 @media (min-width: 600px) and (max-width: 729px) {
   html {
     font-size: 32px; }
@@ -1020,7 +1063,10 @@ div.inside, div.outside {
     padding: 0.5vw 5.1vw; }
 
   .tracker-wrapper .list-menu ul {
-    border-radius: 8px; } }
+    border-radius: 8px; }
+
+  #milestone-index .crossing-eyes-test a {
+    font-size: 1.1rem; } }
 @media (min-width: 730px) and (max-width: 899px) and (orientation: landscape) {
   .calendar-wrapper .lines,
   .tracker-wrapper .lines {
@@ -1068,6 +1114,15 @@ div.inside, div.outside {
     background-size: 4.5%; }
 
   .tracker-wrapper .list-menu li {
-    padding: 0.5vw 6.7vw; } }
+    padding: 0.5vw 6.7vw; }
+
+  #milestone-index .description h2 {
+    font-size: 1.5rem; }
+
+  #milestone-index .description p {
+    text-align: center; }
+
+  #milestone-index .crossing-eyes-test a {
+    font-size: 1.3rem; } }
 
 /*# sourceMappingURL=style.css.map */
