@@ -204,24 +204,24 @@ html {
   background-color: #ffffff;
   color: #f0712c; }
 
-#setup-birthdate .content,
-#setup-due-date .content {
+#setup-birthdate-page .content,
+#setup-due-date-page .content {
   padding: 20vw 0 5vw; }
 
-#setup-birthdate .wrapper-form-heading,
-#setup-due-date .wrapper-form-heading {
+#setup-birthdate-page .wrapper-form-heading,
+#setup-due-date-page .wrapper-form-heading {
   margin-bottom: 10vw;
   position: relative;
   padding: 0 10vw; }
 
-#setup-birthdate .wrapper-form-heading h3,
-#setup-due-date .wrapper-form-heading h3 {
+#setup-birthdate-page .wrapper-form-heading h3,
+#setup-due-date-page .wrapper-form-heading h3 {
   display: inline-block;
   font-size: 1rem;
   color: #39b9de; }
 
-#setup-birthdate .wrapper-form-heading .button,
-#setup-due-date .wrapper-form-heading .button {
+#setup-birthdate-page .wrapper-form-heading .button,
+#setup-due-date-page .wrapper-form-heading .button {
   border: none;
   background-color: #ffffff;
   color: #f0712c;
@@ -311,7 +311,7 @@ div.inside, div.outside {
   font-size: 1.2rem;
   line-height: 1.4rem; }
 
-#setup-birthdate .exclamation-mark {
+#setup-birthdate-page .exclamation-mark {
   width: 100%;
   height: 3rem;
   background-image: url(../img/exclamation-mark.png);
@@ -319,12 +319,12 @@ div.inside, div.outside {
   background-size: 13%;
   background-position: center; }
 
-#setup-birthdate .message {
+#setup-birthdate-page .message {
   font-size: 0.9rem;
   text-align: center;
   padding: 4vw 10vw; }
 
-#setup-birthdate .message a {
+#setup-birthdate-page .message a {
   color: #f0712c;
   text-decoration: none; }
 
@@ -384,12 +384,12 @@ div.inside, div.outside {
   color: #f0712c;
   font-size: 1.05rem; }
 
-#profile-progress .birthdate-wrapper {
+#profile-progress-page .birthdate-wrapper {
   position: relative;
   min-height: 20vw;
   border-bottom: 1px solid #a7a9ac; }
 
-#profile-progress .wrapper-daisy-icon {
+#profile-progress-page .wrapper-daisy-icon {
   position: absolute;
   top: -20vw;
   left: 5vw;
@@ -399,7 +399,7 @@ div.inside, div.outside {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-#profile-progress .birthdate {
+#profile-progress-page .birthdate {
   position: absolute;
   top: 2vw;
   right: 9vw;
@@ -408,32 +408,32 @@ div.inside, div.outside {
   line-height: 1.2rem;
   font-size: 0.9rem; }
 
-#profile-progress .birthdate span {
+#profile-progress-page .birthdate span {
   font-weight: bold; }
 
-#profile-progress .period-time {
+#profile-progress-page .period-time {
   display: flex;
   justify-content: space-between;
   padding: 5vw 5vw 0;
   font-size: 0.9rem; }
 
-#profile-progress .period-time span {
+#profile-progress-page .period-time span {
   color: #3ccfd4; }
 
-#profile-progress .period-time a {
+#profile-progress-page .period-time a {
   color: #585a5b; }
 
-#profile-progress .period-time .active-link {
+#profile-progress-page .period-time .active-link {
   color: #f0712c; }
 
-#profile-progress .milestone-heading,
-#profile-progress .vaccines-heading {
+#profile-progress-page .milestone-heading,
+#profile-progress-page .vaccines-heading {
   position: relative;
   min-height: 13vw;
   font-size: 0.9rem; }
 
-#profile-progress .milestone-heading h3,
-#profile-progress .vaccines-heading h3 {
+#profile-progress-page .milestone-heading h3,
+#profile-progress-page .vaccines-heading h3 {
   text-transform: uppercase;
   display: inline-block;
   margin: 0;
@@ -442,68 +442,68 @@ div.inside, div.outside {
   left: 5vw;
   font-size: 0.9rem; }
 
-#profile-progress .milestone-heading a,
-#profile-progress .vaccines-heading a {
+#profile-progress-page .milestone-heading a,
+#profile-progress-page .vaccines-heading a {
   position: absolute;
   top: 3.3vw;
   right: 5vw;
   color: #f0712c; }
 
-#profile-progress .milestone-list li,
-#profile-progress .vaccines-list li {
+#profile-progress-page .milestone-list li,
+#profile-progress-page .vaccines-list li {
   position: relative;
   min-height: 13vw;
   padding: 0 5vw; }
 
-#profile-progress .milestone-list li:nth-child(odd),
-#profile-progress .vaccines-list li:nth-child(odd) {
+#profile-progress-page .milestone-list li:nth-child(odd),
+#profile-progress-page .vaccines-list li:nth-child(odd) {
   background-color: #d6ecec; }
 
-#profile-progress li {
+#profile-progress-page li {
   background-repeat: no-repeat;
   background-position-x: 5vw;
   background-position-y: center;
   background-size: 5.5%; }
 
-#profile-progress .crossing-eyes {
+#profile-progress-page .crossing-eyes {
   background-image: url(../img/crossing-eyes-icon.png); }
 
-#profile-progress .covered-toy {
+#profile-progress-page .covered-toy {
   background-image: url(../img/eyes-icon.png); }
 
-#profile-progress .back-front {
+#profile-progress-page .back-front {
   background-image: url(../img/message-icon.png); }
 
-#profile-progress .milestone-list a,
-#profile-progress .vaccines-list a {
+#profile-progress-page .milestone-list a,
+#profile-progress-page .vaccines-list a {
   position: absolute;
   top: 3vw;
   left: 12vw;
   color: #f0712c;
   font-size: 0.9rem; }
 
-#profile-progress .vaccines-list li:last-child {
+#profile-progress-page .vaccines-list li:last-child {
   border-bottom: 1px solid #a7a9ac; }
 
-#profile-progress .vaccines-list a {
+#profile-progress-page .vaccines-list a {
   left: 5vw; }
 
-#profile-progress .milestone-list span,
-#profile-progress .vaccines-list span {
+#profile-progress-page .milestone-list span,
+#profile-progress-page .vaccines-list span {
   position: absolute;
   right: 5vw;
   font-size: 1.5rem;
   color: #585a5b; }
 
-#profile-progress .favorites-heading {
+#profile-progress-page .favorites-heading {
   position: relative;
   min-height: 13vw;
   font-size: 0.9rem; }
 
-#profile-progress .favorites {
+#profile-progress-page .favorites {
   margin-bottom: 15vw; }
 
-#profile-progress .favorites-heading h3 {
+#profile-progress-page .favorites-heading h3 {
   display: inline-block;
   position: absolute;
   top: 4.5vw;
@@ -511,13 +511,13 @@ div.inside, div.outside {
   font-size: 0.9rem;
   color: #3ccfd4; }
 
-#profile-progress .favorites-heading a {
+#profile-progress-page .favorites-heading a {
   position: absolute;
   top: 3vw;
   right: 5vw;
   color: #f0712c; }
 
-#profile-progress .favorites-list a {
+#profile-progress-page .favorites-list a {
   padding: 0 5vw;
   color: #f0712c;
   font-size: 0.9rem; }
@@ -529,21 +529,21 @@ div.inside, div.outside {
   background-position-x: center;
   background-position-y: bottom; }
 
-#status-great .icon-status {
+#status-great-page .icon-status {
   background-image: url(../img/great-daisy.png); }
 
-#status-seek .icon-status {
+#status-seek-page .icon-status {
   background-image: url(../img/seek-daisy.png); }
 
-#status-test .icon-status {
+#status-test-page .icon-status {
   background-image: url(../img/tests-daisy.png); }
 
-#status-great .description {
+#status-great-page .description {
   padding: 5vw 6vw;
   margin-bottom: 5vw; }
 
-#status-test .description,
-#status-seek .description {
+#status-test-page .description,
+#status-seek-page .description {
   padding: 5vw 8vw;
   margin-bottom: 10vw; }
 
@@ -557,11 +557,11 @@ div.inside, div.outside {
   text-align: center;
   color: #585a5b; }
 
-#status-great .description p,
-#status-test .description p {
+#status-great-page .description p,
+#status-test-page .description p {
   margin-bottom: 12vw; }
 
-#status-seek .description p {
+#status-seek-page .description p {
   margin-bottom: 4vw; }
 
 .our-status-wrapper .description span {
@@ -570,30 +570,30 @@ div.inside, div.outside {
 .our-status-wrapper .description a {
   color: #f0712c; }
 
-#status-great .wrapper-link,
-#status-test .wrapper-link {
+#status-great-page .wrapper-link,
+#status-test-page .wrapper-link {
   position: relative;
   min-height: 10vw;
   margin-bottom: 10vw; }
 
-#status-great .wrapper-link a,
-#status-test .wrapper-link a {
+#status-great-page .wrapper-link a,
+#status-test-page .wrapper-link a {
   position: absolute;
   color: #f0712c;
   text-align: center;
   width: 100%; }
 
-#baby-tracker .description {
+#baby-tracker-page .description {
   color: #585a5b;
   padding: 0 5vw;
   margin-bottom: 3vw;
   font-size: 0.9rem;
   text-align: center; }
 
-#baby-tracker .list-tracking {
+#baby-tracker-page .list-tracking {
   margin-bottom: 8vw; }
 
-#baby-tracker .list-tracking li {
+#baby-tracker-page .list-tracking li {
   position: relative;
   min-height: 15vw;
   padding: 0 5vw;
@@ -603,22 +603,22 @@ div.inside, div.outside {
   background-size: 6.5%;
   border-bottom: 1px solid #a7a9ac; }
 
-#baby-tracker .list-tracking li:last-child {
+#baby-tracker-page .list-tracking li:last-child {
   border-bottom: none; }
 
-#baby-tracker .list-tracking .keep-track {
+#baby-tracker-page .list-tracking .keep-track {
   background-image: url(../img/crossing-eyes-icon.png); }
 
-#baby-tracker .list-tracking .record-sleep {
+#baby-tracker-page .list-tracking .record-sleep {
   background-image: url(../img/eyes-icon.png); }
 
-#baby-tracker .list-tracking .vacciness {
+#baby-tracker-page .list-tracking .vacciness {
   background-image: url(../img/message-icon.png); }
 
-#baby-tracker .list-tracking .diary {
+#baby-tracker-page .list-tracking .diary {
   background-image: url(../img/arrow-icon-blue.png); }
 
-#baby-tracker .list-tracking a {
+#baby-tracker-page .list-tracking a {
   position: absolute;
   top: 3.2vw;
   left: 25vw;
@@ -864,24 +864,27 @@ div.inside, div.outside {
   font-size: 1.2rem;
   line-height: 1.4rem; }
 
-#milestone-index .description {
+#milestone-index-page .description {
   padding: 0 7vw;
   margin-bottom: 5vw; }
 
-#milestone-index .description h2 {
+#milestone-index-page .description h2 {
   font-size: 1.2rem;
   text-align: center;
   color: #159fc0;
   margin-bottom: 4vw; }
 
-#milestone-index .description p {
+#milestone-index-page .description p {
   text-align: center;
   color: #585a5b; }
 
-#milestone-index .description span {
+#milestone-index-page .description span {
   font-weight: bold; }
 
-#milestone-index .crossing-eyes-test li {
+#milestone-index-page .crossing-eyes-test {
+  margin-bottom: 5vw; }
+
+#milestone-index-page .crossing-eyes-test li {
   border-top: 1px solid #a7a9ac;
   min-height: 16vw;
   display: flex;
@@ -889,14 +892,14 @@ div.inside, div.outside {
   align-items: center;
   padding: 4vw 0; }
 
-#milestone-index .crossing-eyes-test li:first-child {
+#milestone-index-page .crossing-eyes-test li:first-child {
   background-image: url(../img/crossing-eyes-icon.png);
   background-repeat: no-repeat;
   background-position-x: 17vw;
   background-position-y: center;
   background-size: 6.5%; }
 
-#milestone-index .crossing-eyes-test a {
+#milestone-index-page .crossing-eyes-test a {
   color: #f0712c;
   font-size: 1rem;
   text-align: center; }
@@ -910,7 +913,7 @@ div.inside, div.outside {
     width: 2.4rem;
     height: 1.2rem; }
 
-  #baby-tracker .list-tracking li {
+  #baby-tracker-page .list-tracking li {
     background-size: 6.5%; } }
 @media (min-width: 400px) and (max-width: 599px) {
   html {
@@ -935,8 +938,8 @@ div.inside, div.outside {
   .tracker-wrapper .lines {
     top: 23.5vw; }
 
-  #profile-progress .milestone-list a,
-  #profile-progress .vaccines-list a {
+  #profile-progress-page .milestone-list a,
+  #profile-progress-page .vaccines-list a {
     top: 2.6vw; } }
 @media (min-width: 400px) and (max-width: 489px) and (orientation: landscape) {
   #profile-page .tick {
@@ -967,25 +970,25 @@ div.inside, div.outside {
   .tracker-wrapper .lines {
     top: 20vw; }
 
-  #profile-progress li {
+  #profile-progress-page li {
     background-size: 4.5%; }
 
-  #profile-progress .milestone-list a,
-  #profile-progress .vaccines-list a {
+  #profile-progress-page .milestone-list a,
+  #profile-progress-page .vaccines-list a {
     top: 3.7vw; }
 
-  #profile-progress .milestone-list span,
-  #profile-progress .vaccines-list span {
+  #profile-progress-page .milestone-list span,
+  #profile-progress-page .vaccines-list span {
     top: 0.7vw; }
 
-  #baby-tracker .list-tracking a {
+  #baby-tracker-page .list-tracking a {
     top: 3.6vw;
     font-size: 1.1rem; }
 
   .tracker-wrapper .list-menu li {
     padding: 0.5vw 5.2vw; }
 
-  #milestone-index .crossing-eyes-test a {
+  #milestone-index-page .crossing-eyes-test a {
     font-size: 1.1rem; } }
 @media (min-width: 600px) and (max-width: 729px) {
   html {
@@ -1007,7 +1010,7 @@ div.inside, div.outside {
     padding-left: 3vw;
     line-height: 3.5rem; }
 
-  #baby-tracker .list-tracking a {
+  #baby-tracker-page .list-tracking a {
     top: 3.5vw;
     font-size: 1.1rem; }
 
@@ -1045,18 +1048,18 @@ div.inside, div.outside {
     padding-left: 3vw;
     line-height: 3.5rem; }
 
-  #profile-progress li {
+  #profile-progress-page li {
     background-size: 4.5%; }
 
-  #profile-progress .milestone-list a,
-  #profile-progress .vaccines-list a {
+  #profile-progress-page .milestone-list a,
+  #profile-progress-page .vaccines-list a {
     top: 3.3vw; }
 
-  #profile-progress .milestone-list span,
-  #profile-progress .vaccines-list span {
+  #profile-progress-page .milestone-list span,
+  #profile-progress-page .vaccines-list span {
     top: 0.5vw; }
 
-  #baby-tracker .list-tracking a {
+  #baby-tracker-page .list-tracking a {
     top: 3.6vw; }
 
   .tracker-wrapper .list-menu li {
@@ -1065,7 +1068,7 @@ div.inside, div.outside {
   .tracker-wrapper .list-menu ul {
     border-radius: 8px; }
 
-  #milestone-index .crossing-eyes-test a {
+  #milestone-index-page .crossing-eyes-test a {
     font-size: 1.1rem; } }
 @media (min-width: 730px) and (max-width: 899px) and (orientation: landscape) {
   .calendar-wrapper .lines,
@@ -1078,7 +1081,7 @@ div.inside, div.outside {
   #landing-page .link-wrapper .sign-up {
     font-size: 1.9rem; }
 
-  #setup-birthdate .exclamation-mark {
+  #setup-birthdate-page .exclamation-mark {
     height: 4rem; }
 
   .calendar-wrapper {
@@ -1100,15 +1103,15 @@ div.inside, div.outside {
     padding-left: 2.5vw;
     line-height: 4.5rem; }
 
-  #profile-progress .milestone-list a,
-  #profile-progress .vaccines-list a {
+  #profile-progress-page .milestone-list a,
+  #profile-progress-page .vaccines-list a {
     top: 4vw; }
 
-  #profile-progress .milestone-list span,
-  #profile-progress .vaccines-list span {
+  #profile-progress-page .milestone-list span,
+  #profile-progress-page .vaccines-list span {
     top: 2vw; }
 
-  #baby-tracker .list-tracking li {
+  #baby-tracker-page .list-tracking li {
     min-height: 13vw;
     background-position-x: 15vw;
     background-size: 4.5%; }
@@ -1116,13 +1119,13 @@ div.inside, div.outside {
   .tracker-wrapper .list-menu li {
     padding: 0.5vw 6.7vw; }
 
-  #milestone-index .description h2 {
+  #milestone-index-page .description h2 {
     font-size: 1.5rem; }
 
-  #milestone-index .description p {
+  #milestone-index-page .description p {
     text-align: center; }
 
-  #milestone-index .crossing-eyes-test a {
+  #milestone-index-page .crossing-eyes-test a {
     font-size: 1.3rem; } }
 
 /*# sourceMappingURL=style.css.map */

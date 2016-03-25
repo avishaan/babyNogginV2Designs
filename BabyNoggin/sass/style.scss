@@ -254,27 +254,27 @@ html {
 
 // setup-birthdate page styles and setup-due-date page styles
 
-#setup-birthdate .content,
-#setup-due-date .content {
+#setup-birthdate-page .content,
+#setup-due-date-page .content {
     padding: 20vw 0 5vw;
 }
 
-#setup-birthdate .wrapper-form-heading,
-#setup-due-date .wrapper-form-heading {
+#setup-birthdate-page .wrapper-form-heading,
+#setup-due-date-page .wrapper-form-heading {
   margin-bottom: 10vw;
   position: relative;
   padding: 0 10vw;
 }
 
-#setup-birthdate .wrapper-form-heading h3,
-#setup-due-date .wrapper-form-heading h3 {
+#setup-birthdate-page .wrapper-form-heading h3,
+#setup-due-date-page .wrapper-form-heading h3 {
   display: inline-block;
   font-size: $form-heading-font-size;
   color: $form-heading-color;
 }
 
-#setup-birthdate .wrapper-form-heading .button,
-#setup-due-date .wrapper-form-heading .button {
+#setup-birthdate-page .wrapper-form-heading .button,
+#setup-due-date-page .wrapper-form-heading .button {
   @include button-styles;
   position: absolute;
   right: 10vw;
@@ -381,7 +381,7 @@ div.inside, div.outside {
 
 // notification classes
 
-#setup-birthdate .exclamation-mark {
+#setup-birthdate-page .exclamation-mark {
   width: 100%;
   height: 3rem;
   background-image: url(../img/exclamation-mark.png);
@@ -390,13 +390,13 @@ div.inside, div.outside {
   background-position: center;
 }
 
-#setup-birthdate .message {
+#setup-birthdate-page .message {
   font-size: 0.9rem;
   text-align: center;
   padding: 4vw 10vw;
 }
 
-#setup-birthdate .message a {
+#setup-birthdate-page .message a {
   color: $link-color;
   text-decoration: none;
 }
@@ -466,13 +466,13 @@ div.inside, div.outside {
     font-size: 1.05rem;
   }
 
-// profile-progress styles
+// profile-progress-page styles
 
-#profile-progress .birthdate-wrapper {
+#profile-progress-page .birthdate-wrapper {
     @include birthdate-wrapper;
   }
 
-#profile-progress .wrapper-daisy-icon {
+#profile-progress-page .wrapper-daisy-icon {
     position: absolute;
     top: -20vw;
     left: 5vw;
@@ -483,7 +483,7 @@ div.inside, div.outside {
     background-size: 100%;
   }
 
-#profile-progress .birthdate {
+#profile-progress-page .birthdate {
     position: absolute;
     top: 2vw;
     right: 9vw;
@@ -493,38 +493,38 @@ div.inside, div.outside {
     font-size: 0.9rem;
 }
 
-#profile-progress .birthdate span {
+#profile-progress-page .birthdate span {
   font-weight: bold;
 }
 
-#profile-progress .period-time {
+#profile-progress-page .period-time {
   display: flex;
   justify-content: space-between;
   padding: 5vw 5vw 0;
   font-size: 0.9rem;
 }
 
-#profile-progress .period-time span {
+#profile-progress-page .period-time span {
   color: #3ccfd4;
 }
 
-#profile-progress .period-time a {
+#profile-progress-page .period-time a {
   color: $text-color;
 }
 
-#profile-progress .period-time .active-link {
+#profile-progress-page .period-time .active-link {
     color: $link-color;
   }
 
-#profile-progress .milestone-heading,
-#profile-progress .vaccines-heading {
+#profile-progress-page .milestone-heading,
+#profile-progress-page .vaccines-heading {
   position: relative;
   min-height: 13vw;
   font-size: 0.9rem;
 }
 
-#profile-progress .milestone-heading h3,
-#profile-progress .vaccines-heading h3 {
+#profile-progress-page .milestone-heading h3,
+#profile-progress-page .vaccines-heading h3 {
   text-transform: uppercase;
   display: inline-block;
   margin: 0;
@@ -534,8 +534,8 @@ div.inside, div.outside {
   font-size: 0.9rem;
 }
 
-#profile-progress .milestone-heading a,
-#profile-progress .vaccines-heading a {
+#profile-progress-page .milestone-heading a,
+#profile-progress-page .vaccines-heading a {
   position: absolute;
   top: 3.3vw;
   right: 5vw;
@@ -543,39 +543,39 @@ div.inside, div.outside {
 }
 
 
-#profile-progress .milestone-list li,
-#profile-progress .vaccines-list li {
+#profile-progress-page .milestone-list li,
+#profile-progress-page .vaccines-list li {
   position: relative;
   min-height: 13vw;
   padding: 0 5vw;
 }
 
-#profile-progress .milestone-list li:nth-child(odd),
-#profile-progress .vaccines-list li:nth-child(odd) {
+#profile-progress-page .milestone-list li:nth-child(odd),
+#profile-progress-page .vaccines-list li:nth-child(odd) {
   background-color: #d6ecec;
 }
 
-#profile-progress li {
+#profile-progress-page li {
   background-repeat: no-repeat;
   background-position-x: 5vw;
   background-position-y: center;
   background-size: 5.5%;
 }
 
-#profile-progress .crossing-eyes {
+#profile-progress-page .crossing-eyes {
   background-image: url(../img/crossing-eyes-icon.png);
 }
 
-#profile-progress .covered-toy {
+#profile-progress-page .covered-toy {
   background-image: url(../img/eyes-icon.png);
 }
 
-#profile-progress .back-front {
+#profile-progress-page .back-front {
   background-image: url(../img/message-icon.png);
 }
 
-#profile-progress .milestone-list a,
-#profile-progress .vaccines-list a {
+#profile-progress-page .milestone-list a,
+#profile-progress-page .vaccines-list a {
   position: absolute;
   top: 3vw;
   left: 12vw;
@@ -583,35 +583,35 @@ div.inside, div.outside {
   font-size: 0.9rem;
 }
 
-#profile-progress .vaccines-list li:last-child{
+#profile-progress-page .vaccines-list li:last-child{
   border-bottom: 1px solid $border-color;
 }
 
 
-#profile-progress .vaccines-list a {
+#profile-progress-page .vaccines-list a {
   left: 5vw;
 }
 
-#profile-progress .milestone-list span,
-#profile-progress .vaccines-list span {
+#profile-progress-page .milestone-list span,
+#profile-progress-page .vaccines-list span {
   position: absolute;
   right: 5vw;
   font-size: 1.5rem;
   color: $text-color;
 }
 
-#profile-progress .favorites-heading {
+#profile-progress-page .favorites-heading {
   position: relative;
   min-height: 13vw;
   font-size: 0.9rem;
 }
 
 //
-#profile-progress .favorites {
+#profile-progress-page .favorites {
   margin-bottom: 15vw;
 }
 
-#profile-progress .favorites-heading h3 {
+#profile-progress-page .favorites-heading h3 {
   display: inline-block;
   position: absolute;
   top: 4.5vw;
@@ -620,14 +620,14 @@ div.inside, div.outside {
   color: #3ccfd4;
 }
 
-#profile-progress .favorites-heading a {
+#profile-progress-page .favorites-heading a {
   position: absolute;
   top: 3vw;
   right: 5vw;
   color: $link-color;
 }
 
-#profile-progress .favorites-list a {
+#profile-progress-page .favorites-list a {
   padding: 0 5vw;
   color: $link-color;
   font-size: 0.9rem;
@@ -643,25 +643,25 @@ div.inside, div.outside {
     background-position-y: bottom;
   }
 
-#status-great .icon-status {
+#status-great-page .icon-status {
   background-image: url(../img/great-daisy.png);
 }
 
-#status-seek .icon-status {
+#status-seek-page .icon-status {
   background-image: url(../img/seek-daisy.png);
 }
 
-#status-test .icon-status {
+#status-test-page .icon-status {
   background-image: url(../img/tests-daisy.png);
 }
 
-#status-great .description {
+#status-great-page .description {
   padding: 5vw 6vw;
   margin-bottom: 5vw;
 }
 
-#status-test .description,
-#status-seek .description {
+#status-test-page .description,
+#status-seek-page .description {
   padding: 5vw 8vw;
   margin-bottom: 10vw;
 }
@@ -674,12 +674,12 @@ div.inside, div.outside {
   @include description-text;
 }
 
-#status-great .description p ,
-#status-test .description p {
+#status-great-page .description p ,
+#status-test-page .description p {
   margin-bottom: 12vw;
 }
 
-#status-seek .description p {
+#status-seek-page .description p {
   margin-bottom: 4vw;
 }
 
@@ -691,15 +691,15 @@ div.inside, div.outside {
   color: $link-color;
 }
 
-#status-great .wrapper-link,
-#status-test .wrapper-link {
+#status-great-page .wrapper-link,
+#status-test-page .wrapper-link {
   position: relative;
   min-height: 10vw;
   margin-bottom: 10vw;
 }
 
-#status-great .wrapper-link a,
-#status-test .wrapper-link a {
+#status-great-page .wrapper-link a,
+#status-test-page .wrapper-link a {
   position: absolute;
   color: $link-color;
   text-align: center;
@@ -708,7 +708,7 @@ div.inside, div.outside {
 
 // baby tracker styles
 
-#baby-tracker .description {
+#baby-tracker-page .description {
   color: $text-color;
   padding: 0 5vw;
   margin-bottom: 3vw;
@@ -716,11 +716,11 @@ div.inside, div.outside {
   text-align: center;
 }
 
-#baby-tracker .list-tracking {
+#baby-tracker-page .list-tracking {
   margin-bottom: 8vw;
 }
 
-#baby-tracker .list-tracking li {
+#baby-tracker-page .list-tracking li {
   position: relative;
   min-height: 15vw;
   padding: 0 5vw;
@@ -731,27 +731,27 @@ div.inside, div.outside {
   border-bottom: 1px solid $border-color;
 }
 
-#baby-tracker .list-tracking li:last-child {
+#baby-tracker-page .list-tracking li:last-child {
   border-bottom: none;
 }
 
-#baby-tracker .list-tracking .keep-track {
+#baby-tracker-page .list-tracking .keep-track {
   background-image: url(../img/crossing-eyes-icon.png);
 }
 
-#baby-tracker .list-tracking .record-sleep {
+#baby-tracker-page .list-tracking .record-sleep {
   background-image: url(../img/eyes-icon.png);
 }
 
-#baby-tracker .list-tracking .vacciness {
+#baby-tracker-page .list-tracking .vacciness {
   background-image: url(../img/message-icon.png);
 }
 
-#baby-tracker .list-tracking .diary {
+#baby-tracker-page .list-tracking .diary {
   background-image: url(../img/arrow-icon-blue.png);
 }
 
-#baby-tracker .list-tracking a {
+#baby-tracker-page .list-tracking a {
   position: absolute;
   top: 3.2vw;
   left: 25vw;
@@ -1055,24 +1055,28 @@ div.inside, div.outside {
 
 // milestone styles
 
-#milestone-index .description {
+#milestone-index-page .description {
   padding: 0 7vw;
   margin-bottom: 5vw;
 }
 
-#milestone-index .description h2 {
+#milestone-index-page .description h2 {
   @include description-header;
 }
 
-#milestone-index .description p {
+#milestone-index-page .description p {
   @include description-text;
 }
 
-#milestone-index .description span {
+#milestone-index-page .description span {
   font-weight: bold;
 }
 
-#milestone-index .crossing-eyes-test li {
+#milestone-index-page .crossing-eyes-test {
+  margin-bottom: 5vw;
+}
+
+#milestone-index-page .crossing-eyes-test li {
   border-top: 1px solid $border-color;
   min-height: 16vw;
   display: flex;
@@ -1081,7 +1085,7 @@ div.inside, div.outside {
   padding: 4vw 0;
 }
 
-#milestone-index .crossing-eyes-test li:first-child {
+#milestone-index-page .crossing-eyes-test li:first-child {
   background-image: url(../img/crossing-eyes-icon.png);
   background-repeat: no-repeat;
   background-position-x: 17vw;
@@ -1089,7 +1093,7 @@ div.inside, div.outside {
   background-size: 6.5%;
 }
 
-#milestone-index .crossing-eyes-test a {
+#milestone-index-page .crossing-eyes-test a {
   color: $link-color;
   font-size: 1rem;
   text-align: center;
@@ -1113,7 +1117,7 @@ div.inside, div.outside {
 
   // baby tracker styles
 
-  #baby-tracker .list-tracking li {
+  #baby-tracker-page .list-tracking li {
     background-size: 6.5%;
   }
 
@@ -1155,8 +1159,8 @@ div.inside, div.outside {
 
   // progress-page styles
 
-  #profile-progress .milestone-list a,
-  #profile-progress .vaccines-list a {
+  #profile-progress-page .milestone-list a,
+  #profile-progress-page .vaccines-list a {
     top: 2.6vw;
   }
 
@@ -1210,23 +1214,23 @@ div.inside, div.outside {
 
 // progress-page styles
 
-#profile-progress li {
+#profile-progress-page li {
   background-size: 4.5%;
 }
 
-#profile-progress .milestone-list a,
-#profile-progress .vaccines-list a {
+#profile-progress-page .milestone-list a,
+#profile-progress-page .vaccines-list a {
   top: 3.7vw;
 }
 
-#profile-progress .milestone-list span,
-#profile-progress .vaccines-list span {
+#profile-progress-page .milestone-list span,
+#profile-progress-page .vaccines-list span {
   top: 0.7vw;
 }
 
-// baby-tracker styles
+// baby-tracker-page styles
 
-#baby-tracker .list-tracking a {
+#baby-tracker-page .list-tracking a {
   top: 3.6vw;
   font-size: 1.1rem;
 }
@@ -1238,7 +1242,7 @@ div.inside, div.outside {
 
 // milestone styles
 
-#milestone-index .crossing-eyes-test a {
+#milestone-index-page .crossing-eyes-test a {
     font-size: 1.1rem;
 }
 
@@ -1274,9 +1278,9 @@ div.inside, div.outside {
     line-height: 3.5rem;
   }
 
-  // baby-tracker-1 styles
+  // baby-tracker styles
 
-#baby-tracker .list-tracking a {
+#baby-tracker-page .list-tracking a {
   top: 3.5vw;
   font-size: 1.1rem;
 }
@@ -1338,23 +1342,23 @@ div.inside, div.outside {
 
 // progress-page styles
 
-#profile-progress li {
+#profile-progress-page li {
   background-size: 4.5%;
 }
 
-#profile-progress .milestone-list a,
-#profile-progress .vaccines-list a {
+#profile-progress-page .milestone-list a,
+#profile-progress-page .vaccines-list a {
   top: 3.3vw;
 }
 
-#profile-progress .milestone-list span,
-#profile-progress .vaccines-list span {
+#profile-progress-page .milestone-list span,
+#profile-progress-page .vaccines-list span {
   top: 0.5vw;
 }
 
-// baby-tracker-1 styles
+// baby-tracker styles
 
-#baby-tracker .list-tracking a {
+#baby-tracker-page .list-tracking a {
     top: 3.6vw;
 }
 
@@ -1369,7 +1373,7 @@ div.inside, div.outside {
 
 // milestone styles
 
-#milestone-index .crossing-eyes-test a {
+#milestone-index-page .crossing-eyes-test a {
     font-size: 1.1rem;
 }
 
@@ -1398,7 +1402,7 @@ div.inside, div.outside {
     }
 
 
-  #setup-birthdate .exclamation-mark {
+  #setup-birthdate-page .exclamation-mark {
     height: 4rem;
   }
 
@@ -1435,19 +1439,19 @@ div.inside, div.outside {
 
   // progress-page styles
 
-  #profile-progress .milestone-list a,
-  #profile-progress .vaccines-list a {
+  #profile-progress-page .milestone-list a,
+  #profile-progress-page .vaccines-list a {
     top: 4vw;
   }
 
-  #profile-progress .milestone-list span,
-  #profile-progress .vaccines-list span {
+  #profile-progress-page .milestone-list span,
+  #profile-progress-page .vaccines-list span {
     top: 2vw;
   }
 
   // baby-tracker styles
 
-  #baby-tracker .list-tracking li {
+  #baby-tracker-page .list-tracking li {
     min-height: 13vw;
     background-position-x: 15vw;
     background-size: 4.5%;
@@ -1460,17 +1464,17 @@ div.inside, div.outside {
 
   // milestone styles
 
-  #milestone-index .description h2 {
+  #milestone-index-page .description h2 {
     font-size: 1.5rem;
   }
 
 
 
-  #milestone-index .description p {
+  #milestone-index-page .description p {
     text-align: center;
   }
 
-  #milestone-index .crossing-eyes-test a {
+  #milestone-index-page .crossing-eyes-test a {
       font-size: 1.3rem;
   }
 
