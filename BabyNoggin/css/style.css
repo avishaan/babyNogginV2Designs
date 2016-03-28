@@ -51,6 +51,14 @@ html {
   top: 11vw;
   right: 7vw; }
 
+.page-wrapper .header .menu .material-icons {
+  color: #ffe07e;
+  font-size: 1.4rem; }
+
+.page-wrapper nav {
+  width: 0;
+  height: 0; }
+
 .page-wrapper .content {
   border-radius: 345px/50px;
   background-color: #ffffff;
@@ -480,7 +488,25 @@ div.inside, div.outside {
   top: 3vw;
   left: 12vw;
   color: #f0712c;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  width: 100%; }
+
+#profile-progress-page .milestone-list li a:after,
+#profile-progress-page .vaccines-list li a:after {
+  content: "";
+  background-image: url(../img/link-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 8vw;
+  float: left;
+  position: absolute;
+  top: 1.3vw;
+  left: 80vw;
+  display: inline-block;
+  width: 4vw; }
+
+#profile-progress-page .vaccines-list li a:after {
+  left: 87vw; }
 
 #profile-progress-page .vaccines-list li:last-child {
   border-bottom: 1px solid #a7a9ac; }
@@ -915,12 +941,9 @@ div.inside, div.outside {
   padding: 20vw 0 15vw; }
 
 .milestone-pages .link-wrapper {
-  padding: 3vw;
   width: 15vw;
   height: 15vw;
-  margin: auto;
-  border: 2px solid #a7a9ac;
-  border-radius: 50%; }
+  margin: auto; }
 
 .milestone-pages .description {
   padding: 3vw 5vw 0; }

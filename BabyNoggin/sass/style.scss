@@ -52,6 +52,16 @@ html {
   right: $menu-pos-right;
 }
 
+.page-wrapper .header .menu .material-icons {
+  color: #ffe07e;
+  font-size: 1.4rem;
+}
+
+.page-wrapper nav {
+    width: 0;
+    height: 0;
+}
+
 .page-wrapper .content {
   border-radius: 345px/50px;
   background-color: $background-content;
@@ -581,6 +591,26 @@ div.inside, div.outside {
   left: 12vw;
   color: $link-color;
   font-size: 0.9rem;
+  width: 100%;
+}
+
+#profile-progress-page .milestone-list li a:after,
+#profile-progress-page .vaccines-list li a:after {
+  content: "";
+  background-image: url(../img/link-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 8vw;
+  float: left;
+  position: absolute;
+  top: 1.3vw;
+  left: 80vw;
+  display: inline-block;
+  width: 4vw;
+}
+
+#profile-progress-page .vaccines-list li a:after {
+  left: 87vw;
 }
 
 #profile-progress-page .vaccines-list li:last-child{
@@ -941,7 +971,7 @@ div.inside, div.outside {
 }
 
 
-// baby tracker 3 styles
+// baby tracker feed styles
 
 #drum_method {
   width: 100%;
@@ -1109,12 +1139,9 @@ div.inside, div.outside {
 }
 
 .milestone-pages .link-wrapper {
-  padding: 3vw;
   width: 15vw;
   height: 15vw;
   margin: auto;
-  border: 2px solid $border-color;
-  border-radius: 50%;
 }
 
 .milestone-pages .description {

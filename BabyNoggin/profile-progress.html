@@ -14,7 +14,21 @@
       <header class="header">
         <h1 class="headering">Mika's page</h1>
         <a href="profile-page.html" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
-        <a href="#" class="menu"><img src="img/icon-menu.png" alt="arrow" /></a>
+        <a href="#" data-activates="slide-out" class="menu button-collapse"><i class="material-icons">view_headline</i></a>
+        <nav>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <li><a href="#">log out</a></li>
+              <li><a href="#">log in</a></li>
+            </li>
+          </ul>
+          <ul id="slide-out" class="side-nav">
+            <li>
+              <li><a href="#">log out</a></li>
+              <li><a href="#">log in</a></li>
+            </li>
+          </ul>
+        </nav>
       </header>
       <!-- content -->
       <div class="content">
@@ -46,15 +60,12 @@
               <ul>
                 <li class="crossing-eyes">
                   <a href="#">Crossing Eyes</a>
-                  <span>&rsaquo;</span>
                 </li>
                 <li class="covered-toy">
                   <a href="#">Completely Covered Toy</a>
-                  <span>&rsaquo;</span>
                 </li>
                 <li class="back-front">
                   <a href="#">Rolling Back to Front</a>
-                  <span>&rsaquo;</span>
                 </li>
               </ul>
             </div>
@@ -69,11 +80,9 @@
               <ul>
                 <li>
                   <a href="#">Round 2 of DTap</a>
-                  <span>&rsaquo;</span>
                 </li>
                 <li>
                   <a href="#">PCV</a>
-                  <span>&rsaquo;</span>
                 </li>
               </ul>
             </div>
@@ -101,5 +110,12 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+      <script type="text/javascript">
+        $('.button-collapse').sideNav({
+          menuWidth: 240, // Default is 240
+          edge: 'right', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
+      </script>
     </body>
   </html>
