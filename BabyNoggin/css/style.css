@@ -958,6 +958,58 @@ div.inside, div.outside {
 #mil-activity-page .video {
   width: 100%; }
 
+.survey-pages .survey-header h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #159fc0;
+  margin-bottom: 4vw;
+  padding: 15vw 0 5vw; }
+
+#survey-test-page .test-wrapper {
+  padding: 0 12vw;
+  margin-bottom: 15vw; }
+
+#survey-test-page .form-row {
+  min-height: 15vw;
+  border: 1px solid #a7a9ac;
+  margin-bottom: 27px;
+  border-radius: 5px; }
+
+#survey-test-page .radio-wrapper {
+  height: 3.3rem;
+  padding-left: 1.6rem; }
+
+#survey-test-page [type="radio"] + label:before,
+#survey-test-page [type="radio"] + label:after {
+  width: 73vw;
+  height: 12.3vw;
+  margin-top: 0.17rem; }
+
+#survey-test-page [type="radio"]:not(:checked) + label,
+#survey-test-page [type="radio"]:checked + label {
+  padding: 0.5rem 0.66rem 0 1.65rem;
+  width: 69vw;
+  text-align: center; }
+
+#survey-test-page [type="radio"]:not(:checked) + label:before {
+  border-radius: 5px;
+  border: 1px solid #a0ce55;
+  background-color: #a0ce55;
+  z-index: -1; }
+
+#survey-test-page [type="radio"]:checked + label:after {
+  border-radius: 5px;
+  border: 1px solid #a0ce55;
+  background-color: #a0ce55;
+  z-index: -1;
+  transform: scale(1.02);
+  box-sizing: border-box; }
+
+#survey-test-page [type="radio"]:checked + label,
+#survey-test-page [type="radio"]:not(:checked) + label {
+  color: #ffffff;
+  z-index: 1; }
+
 @media (min-width: 350px) {
   html {
     font-size: 21px; }
@@ -968,7 +1020,18 @@ div.inside, div.outside {
     height: 1.2rem; }
 
   #baby-tracker-page .list-tracking li {
-    background-size: 6.5%; } }
+    background-size: 6.5%; }
+
+  #survey-test-page .form-row:nth-child(1) {
+    padding: 1px 0; }
+
+  #survey-test-page [type="radio"]:not(:checked) + label,
+  #survey-test-page [type="radio"]:checked + label {
+    padding: 0.7rem 0.66rem 0 1.65rem; }
+
+  #survey-test-page [type="radio"] + label:before,
+  #survey-test-page [type="radio"] + label:after {
+    width: 73.2vw; } }
 @media (min-width: 400px) and (max-width: 599px) {
   html {
     font-size: 24px; }
@@ -994,7 +1057,10 @@ div.inside, div.outside {
 
   #profile-progress-page .milestone-list a,
   #profile-progress-page .vaccines-list a {
-    top: 2.6vw; } }
+    top: 2.6vw; }
+
+  #survey-test-page .form-row {
+    padding: 1px; } }
 @media (min-width: 400px) and (max-width: 489px) and (orientation: landscape) {
   #profile-page .tick {
     font-size: 3rem;
@@ -1006,7 +1072,14 @@ div.inside, div.outside {
 
   .calendar-wrapper .lines,
   .tracker-wrapper .lines {
-    top: 20.5vw; } }
+    top: 20.5vw; }
+
+  #survey-test-page .content .form-row {
+    padding: 1px 2px; }
+
+  #survey-test-page [type="radio"]:not(:checked) + label,
+  #survey-test-page [type="radio"]:checked + label {
+    padding: 0.8rem 0.66rem 0 1.65rem; } }
 @media (min-width: 490px) and (orientation: landscape) {
   html {
     font-size: 28px; }
@@ -1043,7 +1116,15 @@ div.inside, div.outside {
     padding: 0.5vw 5.2vw; }
 
   #milestone-index-page .crossing-eyes-test a {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+
+  #survey-test-page [type="radio"] + label:before,
+  #survey-test-page [type="radio"] + label:after {
+    width: 74vw; }
+
+  #survey-test-page [type="radio"]:not(:checked) + label,
+  #survey-test-page [type="radio"]:checked + label {
+    padding: 0.9rem 0.66rem 0 1.65rem; } }
 @media (min-width: 600px) and (max-width: 729px) {
   html {
     font-size: 32px; }
@@ -1069,7 +1150,10 @@ div.inside, div.outside {
     font-size: 1.1rem; }
 
   .tracker-wrapper .list-menu li {
-    padding: 0.5vw 5.2vw; } }
+    padding: 0.5vw 5.2vw; }
+
+  #survey-test-page .content .form-row {
+    padding: 3px 1px; } }
 @media (min-width: 730px) {
   html {
     font-size: 38px; }
@@ -1123,11 +1207,27 @@ div.inside, div.outside {
     border-radius: 8px; }
 
   #milestone-index-page .crossing-eyes-test a {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+
+  #survey-test-page .content .form-row {
+    padding: 3px 6px;
+    border-radius: 10px; }
+
+  #survey-test-page [type="radio"]:not(:checked) + label:before,
+  #survey-test-page [type="radio"]:checked + label:after {
+    border-radius: 7px; }
+
+  #survey-test-page [type="radio"]:not(:checked) + label,
+  #survey-test-page [type="radio"]:checked + label {
+    padding: 1rem 0.66rem 0 1.65rem; } }
 @media (min-width: 730px) and (max-width: 899px) and (orientation: landscape) {
   .calendar-wrapper .lines,
   .tracker-wrapper .lines {
-    top: 21vw; } }
+    top: 21vw; }
+
+  #survey-test-page [type="radio"] + label:before,
+  #survey-test-page [type="radio"] + label:after {
+    width: 73vw; } }
 @media (min-width: 900px) {
   .header .headering {
     font-size: 1.6rem; }
@@ -1180,6 +1280,18 @@ div.inside, div.outside {
     text-align: center; }
 
   #milestone-index-page .crossing-eyes-test a {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  #survey-test-page .content .form-row {
+    padding: 7px 9px; }
+
+  #survey-test-page [type="radio"] + label:before,
+  #survey-test-page [type="radio"] + label:after {
+    width: 73.2vw; }
+
+  #survey-test-page [type="radio"]:not(:checked) + label,
+  #survey-test-page [type="radio"]:checked + label {
+    padding: 1.5rem 0.66rem 0 1.65rem;
+    width: 72vw; } }
 
 /*# sourceMappingURL=style.css.map */

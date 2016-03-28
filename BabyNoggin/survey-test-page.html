@@ -15,7 +15,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <script src="ios/lib/drum.js"></script>
 </head>
-<body class="page-wrapper milestone-pages">
+<body id="survey-test-page" class="page-wrapper survey-pages">
     <!-- header-->
     <header class="header">
       <h1 class="headering">sensory &amp; motor</h1>
@@ -23,26 +23,28 @@
     </header>
     <!-- content -->
     <div class="content">
-      <div class="milestone-content">
-        <div class="milestone-header">
-          <h2>What will you need?</h2>
-        </div>
-        <div class="img-wrapper">
-          <img src="img/baby-des.jpg" alt="baby" />
-        </div>
-        <div class="description">
-          <p>
-            You'll need a small toy or other object
-            that will attract and hold baby's attention.
-          </p>
-        </div>
+      <div class="survey-header">
+        <h2>What did you see?</h2>
       </div>
-      <div class="link-block">
-        <div class="link-wrapper">
-          <a href="mil-ready-test.html">
-            <img src="img/arrow-right.png" alt="arrow" />
-          </a>
-        </div>
+      <div class="test-wrapper">
+        <form>
+          <div class="form-row">
+            <input name="test" type="radio" id="both" />
+            <label for="both">Both eyes crosed</label>
+          </div>
+          <div class="form-row">
+            <input name="test" type="radio" id="neither" />
+            <label for="neither">Neither eye crossed</label>
+          </div>
+          <div class="form-row">
+            <input name="test" type="radio" id="right" />
+            <label for="right">Right eye crossed</label>
+          </div>
+          <div class="form-row">
+            <input name="test" type="radio" id="left" />
+            <label for="left">Left eye crossed</label>
+          </div>
+        </form>
       </div>
     </div>
     <!-- footer -->
