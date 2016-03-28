@@ -1129,6 +1129,10 @@ div.inside, div.outside {
   text-align: center;
 }
 
+.milestone-pages .milestone-content {
+  min-height: 90vw;
+}
+
 .milestone-pages .milestone-header h2 {
   @include description-header;
   padding: 15vw 0 5vw;

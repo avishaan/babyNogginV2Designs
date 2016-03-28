@@ -930,6 +930,9 @@ div.inside, div.outside {
   font-size: 1rem;
   text-align: center; }
 
+.milestone-pages .milestone-content {
+  min-height: 90vw; }
+
 .milestone-pages .milestone-header h2 {
   font-size: 1.2rem;
   text-align: center;
