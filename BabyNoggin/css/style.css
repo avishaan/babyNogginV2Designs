@@ -1054,6 +1054,49 @@ div.inside, div.outside {
   min-height: 30vw;
   margin-bottom: 5vw; }
 
+#messaging-page .content {
+  padding: 15vw 5vw; }
+
+#messaging-page .link-wrapper {
+  width: 100%;
+  height: 30vw;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10vw; }
+
+#messaging-page .link-wrapper a {
+  align-items: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1rem;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position-x: 10vw;
+  background-position-y: center; }
+
+#messaging-page .link-wrapper a span {
+  color: #585a5b;
+  font-size: 0.8rem;
+  font-weight: normal; }
+
+#messaging-page .video-call-link a {
+  padding: 6vw 7vw 5vw 28vw;
+  background-image: url(../img/expert-video.png);
+  color: #f0712c; }
+
+#messaging-page .text-message-link a {
+  padding: 6vw 7vw 5vw 28vw;
+  background-image: url(../img/expert-chat.png);
+  color: #159fc0; }
+
+#messaging-page .email-link a {
+  padding: 9vw 7vw 5vw 28vw;
+  background-image: url(../img/expert-email.png);
+  color: #159fc0; }
+
 @media (min-width: 350px) {
   html {
     font-size: 21px; }
@@ -1080,6 +1123,9 @@ div.inside, div.outside {
 @media (min-width: 400px) and (max-width: 599px) {
   html {
     font-size: 24px; }
+
+  .page-wrapper .header .menu {
+    top: 10.5vw; }
 
   #drum_month .inner,
   #drum_date .inner,
@@ -1124,7 +1170,11 @@ div.inside, div.outside {
 
   #survey-test-page [type="radio"]:not(:checked) + label,
   #survey-test-page [type="radio"]:checked + label {
-    padding: 0.8rem 0.66rem 0 1.65rem; } }
+    padding: 0.8rem 0.66rem 0 1.65rem; }
+
+  #messaging-page .link-wrapper a {
+    font-size: 1.1rem;
+    line-height: 1.25rem; } }
 @media (min-width: 490px) and (orientation: landscape) {
   html {
     font-size: 28px; }
@@ -1169,7 +1219,11 @@ div.inside, div.outside {
 
   #survey-test-page [type="radio"]:not(:checked) + label,
   #survey-test-page [type="radio"]:checked + label {
-    padding: 0.9rem 0.66rem 0 1.65rem; } }
+    padding: 0.9rem 0.66rem 0 1.65rem; }
+
+  #messaging-page .link-wrapper a {
+    font-size: 1.2rem;
+    line-height: 1.25rem; } }
 @media (min-width: 600px) and (max-width: 729px) {
   html {
     font-size: 32px; }
@@ -1264,7 +1318,11 @@ div.inside, div.outside {
 
   #survey-test-page [type="radio"]:not(:checked) + label,
   #survey-test-page [type="radio"]:checked + label {
-    padding: 1rem 0.66rem 0 1.65rem; } }
+    padding: 1rem 0.66rem 0 1.65rem; }
+
+  #messaging-page .link-wrapper a {
+    font-size: 1.1rem;
+    line-height: 1.3rem; } }
 @media (min-width: 730px) and (max-width: 899px) and (orientation: landscape) {
   .calendar-wrapper .lines,
   .tracker-wrapper .lines {
@@ -1276,6 +1334,12 @@ div.inside, div.outside {
 @media (min-width: 900px) {
   .header .headering {
     font-size: 1.6rem; }
+
+  .page-wrapper .header .menu {
+    top: 10vw; }
+
+  .page-wrapper .header .menu .material-icons {
+    font-size: 2rem; }
 
   #landing-page .link-wrapper .sign-up {
     font-size: 1.9rem; }
@@ -1337,6 +1401,13 @@ div.inside, div.outside {
   #survey-test-page [type="radio"]:not(:checked) + label,
   #survey-test-page [type="radio"]:checked + label {
     padding: 1.5rem 0.66rem 0 1.65rem;
-    width: 72vw; } }
+    width: 72vw; }
+
+  #messaging-page .link-wrapper a {
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+
+  #messaging-page .link-wrapper a span {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

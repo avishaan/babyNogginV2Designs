@@ -1277,6 +1277,62 @@ div.inside, div.outside {
   margin-bottom: 5vw;
 }
 
+// messaging styles
+
+#messaging-page .content {
+    padding: 15vw 5vw;
+}
+
+#messaging-page .link-wrapper {
+  width: 100%;
+  height: 30vw;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10vw;
+
+}
+
+#messaging-page .link-wrapper a {
+  align-items: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1rem;
+
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position-x: 10vw;
+  background-position-y: center;
+}
+
+#messaging-page .link-wrapper a span {
+  color: $text-color;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+#messaging-page .video-call-link a {
+  padding: 6vw 7vw 5vw 28vw;
+  background-image: url(../img/expert-video.png);
+  color: $link-color;
+}
+
+#messaging-page .text-message-link a {
+  padding: 6vw 7vw 5vw 28vw;
+  background-image: url(../img/expert-chat.png);
+  color: $status-header-color;
+}
+
+#messaging-page .email-link a {
+  padding: 9vw 7vw 5vw 28vw;
+  background-image: url(../img/expert-email.png);
+  color: $status-header-color;
+}
+
 // media query styles
 
 @media (min-width: $small) {
@@ -1322,6 +1378,10 @@ div.inside, div.outside {
 
   html {
     font-size: 24px;
+  }
+
+  .page-wrapper .header .menu {
+    top: 10.5vw;
   }
 
   // calendar styles
@@ -1397,6 +1457,13 @@ div.inside, div.outside {
     padding: 0.8rem 0.66rem 0 1.65rem;
 }
 
+// messaging styles
+
+#messaging-page .link-wrapper a {
+  font-size: 1.1rem;
+  line-height: 1.25rem
+}
+
 }
 
 @media (min-width: $xsmall-landscape) and (orientation: landscape) {
@@ -1468,6 +1535,13 @@ div.inside, div.outside {
 #survey-test-page [type="radio"]:not(:checked) + label,
 #survey-test-page [type="radio"]:checked + label {
     padding: 0.9rem 0.66rem 0 1.65rem;
+}
+
+// messaging test
+
+#messaging-page .link-wrapper a {
+  font-size: 1.2rem;
+  line-height: 1.25rem
 }
 
 }
@@ -1624,6 +1698,13 @@ div.inside, div.outside {
     padding: 1rem 0.66rem 0 1.65rem;
 }
 
+// messaging styles
+
+#messaging-page .link-wrapper a {
+  font-size: 1.1rem;
+  line-height: 1.3rem
+}
+
 }
 
 @media (min-width: $xmedium) and (max-width:$large - 1)and (orientation: landscape) {
@@ -1648,6 +1729,14 @@ div.inside, div.outside {
   .header .headering {
     font-size: 1.6rem;
   }
+
+  .page-wrapper .header .menu {
+    top: 10vw;
+  }
+
+  .page-wrapper .header .menu .material-icons {
+    font-size: 2rem;
+}
 
   // landing page styles
 
@@ -1747,6 +1836,17 @@ div.inside, div.outside {
   #survey-test-page [type="radio"]:checked + label {
       padding: 1.5rem 0.66rem 0 1.65rem;
       width: 72vw;
+  }
+
+  // messaging styles
+
+  #messaging-page .link-wrapper a {
+    font-size: 1.5rem;
+    line-height: 1.5rem
+  }
+
+  #messaging-page .link-wrapper a span {
+    font-size: 1rem;
   }
 
 }
