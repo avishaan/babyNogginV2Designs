@@ -67,6 +67,7 @@ html {
   background-color: $background-content;
   overflow: hidden;
   min-height: $content-min-height;
+  width: 100%;
 }
 
 .page-wrapper .footer {
@@ -1200,9 +1201,6 @@ div.inside, div.outside {
 #survey-test-page [type="radio"]:not(:checked) + label,
 #survey-test-page [type="radio"]:checked + label {
     padding: 0.5rem 0.66rem 0 1.65rem;
-    //font-size: 0.8rem;
-    //text-transform: uppercase;
-    //margin-right: 0.8rem;
     width: 69vw;
     text-align: center;
 }
@@ -1219,7 +1217,7 @@ div.inside, div.outside {
     border: 1px solid #a0ce55;
     background-color: #a0ce55;
     z-index: -1;
-    transform: scale(1.02);
+    transform: scale(1);
     box-sizing: border-box;
 }
 
@@ -1253,7 +1251,8 @@ div.inside, div.outside {
 
   // test page
 
-  #survey-test-page .form-row:nth-child(1) {
+  #survey-test-page .form-row:nth-child(1),
+  #survey-test-page .form-row:nth-child(2) {
     padding: 1px 0;
   }
 

@@ -63,7 +63,8 @@ html {
   border-radius: 345px/50px;
   background-color: #ffffff;
   overflow: hidden;
-  min-height: 83vh; }
+  min-height: 83vh;
+  width: 100%; }
 
 .page-wrapper .footer {
   min-height: 14vw; }
@@ -1002,7 +1003,7 @@ div.inside, div.outside {
   border: 1px solid #a0ce55;
   background-color: #a0ce55;
   z-index: -1;
-  transform: scale(1.02);
+  transform: scale(1);
   box-sizing: border-box; }
 
 #survey-test-page [type="radio"]:checked + label,
@@ -1022,7 +1023,8 @@ div.inside, div.outside {
   #baby-tracker-page .list-tracking li {
     background-size: 6.5%; }
 
-  #survey-test-page .form-row:nth-child(1) {
+  #survey-test-page .form-row:nth-child(1),
+  #survey-test-page .form-row:nth-child(2) {
     padding: 1px 0; }
 
   #survey-test-page [type="radio"]:not(:checked) + label,
