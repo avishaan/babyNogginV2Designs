@@ -1016,35 +1016,43 @@ div.inside, div.outside {
   margin: auto;
   margin-bottom: 5vw; }
 
-#test-status-page .content {
-  padding: 10vw; }
+.survay-pages .content {
+  padding: 10vw 0; }
 
-#test-status-page .description {
-  margin-bottom: 12vw; }
+.survay-pages .description {
+  margin-bottom: 5vw;
+  padding: 0 10vw; }
 
-#test-status-page .description h2 {
+.survay-pages .description h2 {
   font-size: 1.2rem;
   text-align: center;
   color: #159fc0;
   margin-bottom: 4vw; }
 
-#test-status-page .description p {
+.survay-pages .description p {
   text-align: center;
   color: #585a5b;
   margin-bottom: 5vw; }
 
-#test-status-page .description span {
+.survay-pages .description span {
   font-weight: bold; }
 
-#test-status-page .wrapper-link {
+.survay-pages .wrapper-link {
   position: relative;
-  min-height: 10vw; }
+  min-height: 10vw;
+  margin-top: 12vw; }
 
-#test-status-page .wrapper-link a {
+.survay-pages .wrapper-link a {
   position: absolute;
   color: #f0712c;
   text-align: center;
   width: 100%; }
+
+.survay-pages .diagram-wrapper {
+  border-top: 2px solid #a7a9ac;
+  border-bottom: 2px solid #a7a9ac;
+  min-height: 30vw;
+  margin-bottom: 5vw; }
 
 @media (min-width: 350px) {
   html {
