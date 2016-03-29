@@ -1011,6 +1011,41 @@ div.inside, div.outside {
   color: #ffffff;
   z-index: 1; }
 
+#test-status-page .test-icon {
+  width: 30vw;
+  margin: auto;
+  margin-bottom: 5vw; }
+
+#test-status-page .content {
+  padding: 10vw; }
+
+#test-status-page .description {
+  margin-bottom: 12vw; }
+
+#test-status-page .description h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #159fc0;
+  margin-bottom: 4vw; }
+
+#test-status-page .description p {
+  text-align: center;
+  color: #585a5b;
+  margin-bottom: 5vw; }
+
+#test-status-page .description span {
+  font-weight: bold; }
+
+#test-status-page .wrapper-link {
+  position: relative;
+  min-height: 10vw; }
+
+#test-status-page .wrapper-link a {
+  position: absolute;
+  color: #f0712c;
+  text-align: center;
+  width: 100%; }
+
 @media (min-width: 350px) {
   html {
     font-size: 21px; }

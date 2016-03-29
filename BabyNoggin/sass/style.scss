@@ -1227,6 +1227,48 @@ div.inside, div.outside {
   z-index: 1;
 }
 
+// survey test styles
+
+#test-status-page .test-icon {
+  width: 30vw;
+  margin: auto;
+  margin-bottom: 5vw;
+}
+
+#test-status-page .content {
+  padding: 10vw;
+}
+
+#test-status-page .description {
+  margin-bottom: 12vw;
+}
+
+#test-status-page .description h2 {
+  @include description-header;
+}
+
+#test-status-page .description p {
+  @include description-text;
+  margin-bottom: 5vw;
+}
+
+#test-status-page .description span {
+  font-weight: bold;
+}
+
+#test-status-page .wrapper-link {
+  position: relative;
+  min-height: 10vw;
+}
+
+#test-status-page .wrapper-link a {
+  position: absolute;
+  color: $link-color;
+  text-align: center;
+  width: 100%;
+}
+
+
 // media query styles
 
 @media (min-width: $small) {
