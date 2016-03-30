@@ -16,108 +16,137 @@
     <script src="ios/lib/drum.js"></script>
     <script>
         Hammer.plugins.fakeMultitouch();
-        $(document).ready(function () {
-          $("#month").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
-          $("#day").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
-          $("#year").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
+
+        function getIndexForValue(elem, value) {
+            for (var i = 0; i < elem.options.length; i++)
+            if (elem.options[i].value == value) return i;
+        }
+
+        function update(datetime) {
+            $("#date").drum('setIndex', datetime.getDate() - 1);
+            $("#month").drum('setIndex', datetime.getMonth());
+            $("#fullYear").drum('setIndex', getIndexForValue($("#fullYear")[0], datetime.getFullYear()));
+
+            $("#month").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
+            $("#date").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
+            $("#fullYear").drum({ panelCount: 20, dail_w: 35, dail_h: 10, dail_stroke_width: 2 });
+        }
+
+        $(document).ready(function() {
+            $("select.date").drum({
+                onChange: function(elem) {
+                    var arr = {
+                        'date': 'setDate',
+                        'month': 'setMonth',
+                        'fullYear': 'setFullYear'
+                    };
+                    var date = new Date();
+                    for (var s in arr) {
+                    var i = ($("form[name='date'] select[name='" + s + "']"))[0].value;
+                        eval("date." + arr[s] + "(" + i + ")");
+                    }
+                    date.setSeconds(0);
+                    update(date);
+                }
+            });
+            update(new Date());
         });
     </script>
 </head>
-<body>
-    <div class="wrapper-setup-birthdate">
-        <!-- header -->
-        <header class="header">
-            <h1 class="headering">profile setup</h1>
-            <a href="setup.html" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
-        </header>
-        <div class="content">
-            <!-- form -->
-            <form action="#" name="date">
-                <div class="wrapper-form-heading">
-                    <h3>Baby's birthdate</h3>
-                    <input type="submit" name="button" class="button" value="Next">
+<body id="setup-birthdate-page" class="page-wrapper">
+    <!-- header -->
+    <header class="header">
+        <h1 class="headering">profile setup</h1>
+        <a href="setup.html" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
+    </header>
+    <div class="content">
+        <!-- form -->
+        <form action="#" name="date">
+            <div class="wrapper-form-heading">
+                <h3>Baby's birthdate</h3>
+                <input type="submit" name="button" class="button" value="Next">
+            </div>
+            <!-- calendar -->
+            <div class="calendar-wrapper">
+                <div class="lines"></div>
+                <!-- select month -->
+                <div class="outside">
+                    <select class="date" id="month" name="month">
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
                 </div>
-                <!-- calendar -->
-                <div class="calendar-wrapper">
-                    <!-- select month -->
-                    <div class="outside">
-                        <select id="month" class="drum" name="month">
-                            <option value="0">January</option>
-                            <option value="1">February</option>
-                            <option value="2">March</option>
-                            <option value="3">April</option>
-                            <option value="4">May</option>
-                            <option value="5">June</option>
-                            <option value="6">July</option>
-                            <option value="7">August</option>
-                            <option value="8">September</option>
-                            <option value="9">October</option>
-                            <option value="10">November</option>
-                            <option value="11">December</option>
-                        </select>
-                    </div>
-                    <!-- select day -->
-                    <div class="outside">
-                        <select id="day" class="drum" name="day">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
-                    </div>
-                    <!-- select year -->
-                    <div class="outside">
-                        <select id="year" class="drum" name="year">
-                            <option value="2011">2011</option>
-                            <option value="2012">2012</option>
-                            <option value="2013">2013</option>
-                            <option value="2014">2014</option>
-                            <option value="2015">2015</option>
-                            <option value="2016">2016</option>
-                            <option value="2017">2017</option>
-                        </select>
-                    </div>
+                <!-- select day -->
+                <div class="outside">
+                    <select class="date" id="date" name="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
                 </div>
-            </form>
-            <!-- notification -->
-            <div class="notification">
-                <div class="exclamation-mark">
-                </div>
-                <div class="message">
-                    If your baby was born before 37 weeks,
-                    <a href="setup-due-date.html">add origin due date</a>
+                <!-- select year -->
+                <div class="outside">
+                    <select class="date" id="fullYear" name="fullYear">
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                    </select>
                 </div>
             </div>
+        </form>
+        <!-- notification -->
+        <div class="notification">
+            <div class="exclamation-mark">
+            </div>
+            <div class="message">
+                If your baby was born before 37 weeks,
+                <a href="setup-due-date.html">add origin due date</a>
+            </div>
         </div>
-        <!-- footer -->
-        <footer class="footer"></footer>
     </div>
+    <!-- footer -->
+    <footer class="footer"></footer>
 </body>
 </html>

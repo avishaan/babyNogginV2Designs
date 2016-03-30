@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body id="profile-progress-page" class="page-wrapper">
+      <!-- header-->
+      <header class="header">
+        <h1 class="headering">Mika's page</h1>
+        <a href="profile-page.html" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
+        <a href="#" data-activates="slide-out" class="menu button-collapse"><i class="material-icons">view_headline</i></a>
+        <nav>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <li><a href="#">log out</a></li>
+              <li><a href="#">log in</a></li>
+            </li>
+          </ul>
+          <ul id="slide-out" class="side-nav">
+            <li>
+              <li><a href="#">log out</a></li>
+              <li><a href="#">log in</a></li>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- content -->
+      <div class="content">
+        <!-- baby image -->
+        <div class="image-wrapper">
+          <img src="img/baby.png" alt="baby" />
+        </div>
+        <!-- birthdate -->
+        <div class="birthdate-wrapper">
+          <div class="wrapper-daisy-icon"></div>
+          <div class="birthdate">
+            <span>Mika</span> is 1 year,<br /> 3 months, 14 days
+          </div>
+        </div>
+        <!--  -->
+        <div class="milestones-wrapper">
+          <div class="period-time">
+            <span>Coming up:</span>
+            <a href="#">this week</a>
+            <a href="#" class="active-link">this month</a>
+          </div>
+          <!-- milestones list -->
+          <div class="milestones">
+            <div class="milestone-heading">
+              <h3>Milestones</h3>
+              <a href="#">See all</a>
+            </div>
+            <div class="milestone-list">
+              <ul>
+                <li class="crossing-eyes">
+                  <a href="#">Crossing Eyes</a>
+                </li>
+                <li class="covered-toy">
+                  <a href="#">Completely Covered Toy</a>
+                </li>
+                <li class="back-front">
+                  <a href="#">Rolling Back to Front</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- vaccines list -->
+          <div class="vaccines">
+            <div class="vaccines-heading">
+              <h3>Vaccines</h3>
+              <a href="#">See all</a>
+            </div>
+            <div class="vaccines-list">
+              <ul>
+                <li>
+                  <a href="#">Round 2 of DTap</a>
+                </li>
+                <li>
+                  <a href="#">PCV</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- favorites list -->
+          <div class="favorites">
+            <div class="favorites-heading">
+              <h3>My favorites</h3>
+              <a href="#">Edit</a>
+            </div>
+            <div class="favorites-list">
+              <ul>
+                <li>
+                  <a href="#">May 2015 birthdate group</a>
+                </li>
+                <li>
+                  <a href="#">Mika's progress</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+      <script type="text/javascript">
+        $('.button-collapse').sideNav({
+          menuWidth: 240, // Default is 240
+          edge: 'right', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
+      </script>
+    </body>
+  </html>

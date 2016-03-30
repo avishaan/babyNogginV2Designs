@@ -1,0 +1,49 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
+
+@mixin button-styles {
+  border: none;
+  background-color: $background-content;
+  color: $link-color;
+}
+
+// select mixins
+
+@mixin select-inner {
+  top: 1rem;
+  height: 8.7rem;
+}
+
+@mixin select-figure {
+  height: 2.1rem;
+}
+
+@mixin select-container {
+  height: 2.1rem;
+  top: 3.4rem;
+}
+
+//
+
+@mixin birthdate-wrapper {
+  position: relative;
+  min-height: 20vw;
+  border-bottom: 1px solid $border-color;
+}
+
+@mixin description-header {
+  font-size: 1.2rem;
+  text-align: center;
+  color: $status-header-color;
+  margin-bottom: 4vw;
+}
+
+@mixin description-text {
+  text-align: center;
+  color: $text-color;
+}

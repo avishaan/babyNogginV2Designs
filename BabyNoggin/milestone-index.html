@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baby Noggin</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body id="milestone-index-page" class="page-wrapper milestone-pages">
+    <!-- header-->
+    <header class="header">
+      <h1 class="headering">sensory &amp; motor</h1>
+      <a href="#" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
+      <a href="#" data-activates="slide-out" class="menu button-collapse"><i class="material-icons">view_headline</i></a>
+      <nav>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <li><a href="#">log out</a></li>
+            <li><a href="#">log in</a></li>
+          </li>
+        </ul>
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <li><a href="#">log out</a></li>
+            <li><a href="#">log in</a></li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- content -->
+    <div class="content">
+        <div class="image-wrapper">
+            <img src="img/main-photo.png" alt="baby" />
+        </div>
+        <div class="description">
+          <h2>Crossing Eyes</h2>
+          <p>
+            Your baby needs to cross his eyes to be able to
+            <span>focus on and track close objects.</span>
+          </p>
+        </div>
+        <div class="crossing-eyes-test">
+          <ul>
+            <li>
+              <a href="mil-activity.html">Crossing Eyes test</a></li>
+            <li>
+              <a href="#">
+                Can't cross her eyes?<br />
+                Try these fun activities!
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer"></footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script type="text/javascript">
+      $('.button-collapse').sideNav({
+        menuWidth: 240, // Default is 240
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      });
+    </script>
+</body>
+</html>

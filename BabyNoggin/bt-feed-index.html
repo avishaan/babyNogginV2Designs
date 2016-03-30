@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Baby Noggin</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="page-wrapper tracker-wrapper">
+    <!-- header-->
+    <header class="header">
+      <h1 class="headering">baby tracker</h1>
+      <a href="#" class="arrow-back"><img src="img/arrow.png" alt="arrow" /></a>
+      <a href="#" data-activates="slide-out" class="menu button-collapse"><i class="material-icons">view_headline</i></a>
+      <nav>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <li><a href="#">log out</a></li>
+            <li><a href="#">log in</a></li>
+          </li>
+        </ul>
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <li><a href="#">log out</a></li>
+            <li><a href="#">log in</a></li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- content -->
+    <div class="content">
+        <div class="list-menu">
+          <ul class="clear-fix">
+            <li class="active-link"><a href="#">Feed</a></li>
+            <li><a href="#">Sleep</a></li>
+            <li><a href="#">Vaccines</a></li>
+            <li><a href="#">Diary</a></li>
+          </ul>
+        </div>
+        <!-- input for date -->
+        <input type="date" name="date" id="date" value="2015-08-23"/>
+        <div class="change-date">
+          <div id="prev">
+            <a href="#" id="prev-link"></a>
+          </div>
+          <div class="current-date">
+            <h3 id="diary-date"></h3>
+          </div>
+          <div id="next">
+            <a href="#" id="next-link"></a>
+          </div>
+          <div class="add-notes">
+            <a href="#"></a>
+          </div>
+        </div>
+        <!-- list notes -->
+        <div class="list-notes">
+          <ul>
+            <li>
+              <span>7:25 PM</span>
+              <span>Fed formula</span>
+            </li>
+            <li>
+              <span>6:15 PM</span>
+              <span>Fed right</span>
+            </li>
+            <li>
+              <span>4:15 PM</span>
+              <span>Fed left</span>
+            </li>
+            <li>
+              <span>3:30 PM</span>
+              <span>Fed right</span>
+            </li>
+            <li>
+              <span>1:15 PM</span>
+              <span>Pumped Left</span>
+            </li>
+            <li>
+              <span>12:15 PM</span>
+              <span>Fed right</span>
+            </li>
+            <li>
+              <span>9:45 PM</span>
+              <span>Formula</span>
+            </li>
+            <li>
+              <span>5:15 PM</span>
+              <span>Fed left</span>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script src="date-picker/picker.js"></script>
+    <script type="text/javascript">
+      $('.button-collapse').sideNav({
+        menuWidth: 240, // Default is 240
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      });
+    </script>
+</body>
+</html>
